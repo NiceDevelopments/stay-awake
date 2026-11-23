@@ -34,6 +34,7 @@ C = {
         "more_guides": "Weitere Anleitungen",
         "play_cta": "Bei Google Play laden",
         "play_note": "Kostenlos für Android · ohne Konto",
+        "moreapps": "Weitere Apps von Nice Developments",
         "footer_tag": "Wach-Check-Timer für Android.",
         "trademark": "Google Play und Android sind Marken von Google LLC.",
     },

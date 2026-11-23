@@ -160,7 +160,7 @@ def footer(code: str) -> str:
 <footer class="site">
   <div class="wrap wide foot">
     <p><strong>{e(C[code]['app_name'])}</strong> · {e(u['footer_tag'])}</p>
-    <p><a href="{href(guides_path(code))}">{e(u['guides'])}</a> · <a href="{href(lg['privacy'])}">{e(u['privacy'])}</a> · <a href="{href(lg['imprint'])}" rel="nofollow">{e(u['imprint'])}</a> · <a href="{e(play_url(code))}">Google Play</a></p>
+    <p><a href="{href(guides_path(code))}">{e(u['guides'])}</a> · <a href="{href(lg['privacy'])}">{e(u['privacy'])}</a> · <a href="{href(lg['imprint'])}" rel="nofollow">{e(u['imprint'])}</a> · <a href="{e(play_url(code))}">Google Play</a> · <a href="https://nicedevelopments.github.io/">{e(u['moreapps'])}</a></p>
     <p class="fine">Nice Developments · {e(u['trademark'])}</p>
   </div>
 </footer>

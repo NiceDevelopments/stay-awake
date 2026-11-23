@@ -34,6 +34,7 @@ C = {
         "more_guides": "More guides",
         "play_cta": "Get it on Google Play",
         "play_note": "Free for Android · no account",
+        "moreapps": "More apps by Nice Developments",
         "footer_tag": "Wake check timer for Android.",
         "trademark": "Google Play and Android are trademarks of Google LLC.",
     },
