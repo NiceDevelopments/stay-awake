@@ -353,7 +353,7 @@ C = {
         {
             "id": "every30",
             "slug": "wecker-alle-30-minuten-android",
-            "title": "Wecker alle 30 Minuten auf Android: Intervall-Wecker einstellen",
+            "title": "Wecker alle 30 Minuten auf Android einstellen – drei Wege",
             "desc": "Die Uhr-App von Android kennt kein „alle 30 Minuten“. Drei Wege, die funktionieren: mehrere Wecker, ein neu gestarteter Timer oder ein Intervall-Wecker.",
             "h1": "Wecker alle 30 Minuten auf Android",
             "teaser": "Mehrere Wecker, ein Timer oder ein Intervall-Wecker – drei Wege.",
@@ -403,7 +403,7 @@ C = {
                 ["Warum klingelt mein Intervall-Wecker bei dunklem Bildschirm nicht?",
                  ["Oft sind Akku-Optimierung oder eine fehlende Berechtigung für exakte Alarme schuld. Siehe [Android-Wecker klingelt nicht](/de/anleitungen/android-wecker-klingelt-nicht/)."]],
                 ["Geht auch ein Intervall von 15 oder 45 Minuten?",
-                 ["In Stay Awake ja: Der Regler reicht von einer Minute bis zu zwölf Stunden."]],
+                 ["In Stay Awake ja: Der Regler reicht von einer Minute bis zu zwölf Stunden. Welche Wege es für andere Intervalle gibt, steht unter [Intervall-Wecker für Android](/de/anleitungen/intervall-wecker-android/)."]],
             ],
         },
         {
@@ -518,3 +518,105 @@ C = {
         },
     ],
 }
+
+# Neu 24.11.2026 (SEO-Fahrplan). Suchvorschlaege (Google, de): "intervall wecker (app)", "samsung
+# wecker intervall", "wecker alle 10/15 minuten", "wecker jede stunde", "android wecker jede stunde",
+# "stuendlicher wecker android". Die Nach-dem-Wecker-Seite gibt es nur auf Englisch (keine
+# deutsche Nachfrage gefunden).
+#
+# Abgrenzung (Lektorat 24.11.2026), damit sich die Seiten nicht gegenseitig die Suchanfragen nehmen:
+# - intervall-wecker-android = Ueberblick NACH INTERVALL: welcher Weg zu welchem Intervall passt,
+#   Schritt fuer Schritt "jede Stunde", kurze Intervalle, Schlummern ("samsung wecker intervall"
+#   meint meist die Schlummer-Einstellung), Auswahl einer App.
+# - wecker-alle-30-minuten-android = Schritt-fuer-Schritt fuer genau dieses eine Intervall
+#   (drei Wege). Die drei Wege hier nicht noch einmal ausbreiten, nur verlinken.
+# - wecker-der-prueft-ob-du-wach-bist = das Prinzip Wach-Check. Hier nur verlinken.
+# Die Tabelle "Erinnerung / Intervall-Timer / Intervall-Wecker" darf der Tabelle auf der
+# Wach-Check-Seite nicht widersprechen (dort: Intervall-Wecker "klingelt, hoert dann auf").
+C["guides"] += [
+    {
+        "id": "interval",
+        "slug": "intervall-wecker-android",
+        "title": "Intervall-Wecker für Android: alle 10 oder 15 Minuten, jede Stunde",
+        "desc": "Intervall-Wecker unter Android: Wecker jede Stunde mit der Uhr-App, alle 10 oder 15 Minuten mit Timer oder App – und warum Schlummern kein Ersatz ist.",
+        "h1": "Intervall-Wecker für Android: alle 10 oder 15 Minuten, jede Stunde",
+        "teaser": "Jede Stunde mit der Uhr-App, kürzere Intervalle mit Timer oder App.",
+        "answer": "Ein **Intervall-Wecker** klingelt alle paar Minuten oder jede Stunde statt einmal zu einer festen Uhrzeit. Die Uhr-Apps der meisten Android-Handys haben dafür keine Einstellung – sie wiederholen nur **nach Wochentagen**. Welcher Umweg passt, hängt vom Intervall ab: Für **jede Stunde oder seltener** reichen ein paar einzelne Wecker; für **alle 10 oder 15 Minuten** brauchst du einen Timer, den du neu startest, oder eine **Intervall-Wecker-App**.",
+        "updated": "2026-11-24",
+        "updated_label": "24. November 2026",
+        "sections": [
+            ["welcher-weg", "Welcher Weg zu welchem Intervall passt", [
+                "Ohne App brauchst du für jedes Klingeln einen eigenen Wecker. Gerechnet auf acht Stunden:",
+                {"table": [
+                    ["Intervall", "Wecker für 8 Stunden", "Nur mit der Uhr-App"],
+                    ["10 Minuten", "48", "Zu viele – Timer oder App"],
+                    ["15 Minuten", "32", "Zu viele – Timer oder App"],
+                    ["20 Minuten", "24", "Zu viele – Timer oder App"],
+                    ["30 Minuten", "16", "Möglich, aber mühsam"],
+                    ["Jede Stunde", "8", "Geht gut"],
+                    ["Alle 2 Stunden", "4", "Geht gut"],
+                ]},
+                "Für genau 30 Minuten gibt es eine eigene Schritt-für-Schritt-Anleitung: [Wecker alle 30 Minuten auf Android](/de/anleitungen/wecker-alle-30-minuten-android/).",
+            ]],
+            ["jede-stunde", "Wecker jede Stunde stellen", [
+                {"steps": [
+                    "Öffne die Uhr-App und geh zu **Wecker**.",
+                    "Leg einen Wecker für die erste Stunde an, zum Beispiel 22:00 Uhr.",
+                    "Leg für jede weitere Stunde einen eigenen an – 23:00 Uhr, 0:00 Uhr und so weiter.",
+                    "Soll das an bestimmten Tagen wiederkehren, wähl bei allen dieselben **Wochentage**.",
+                    "Gib ihnen einen Namen wie „stündlich“, falls deine Uhr-App das anbietet – dann findest du sie später schneller wieder.",
+                ]},
+                "Zwei Dinge solltest du wissen: Die Wecker klingeln zu festen Zeiten, ob du wach bist oder nicht, und danach schaltest du sie einzeln wieder aus.",
+                "Viele Digitaluhren und manche Smartwatches haben ein **Stundensignal** – einen kurzen Piep zur vollen Stunde. Das ist ein Zeitsignal, kein Wecker: Es wartet auf keine Reaktion.",
+            ]],
+            ["kurz", "Wecker alle 10 oder 15 Minuten", [
+                "Bei so kurzen Abständen scheiden einzelne Wecker aus – 32 oder 48 Stück für eine Nacht. Es bleiben zwei Wege:",
+                {"list": [
+                    "**Timer neu starten.** Stell den Timer der Uhr-App auf 10:00 oder 15:00 und starte ihn bei jedem Klingeln neu. Für ein, zwei Stunden, in denen du ohnehin beschäftigt bist, reicht das; verpasst du einen Neustart, ist die Reihe zu Ende.",
+                    "**Eine Intervall-Wecker-App.** Sie wiederholt von selbst. Worauf du dabei achtest, steht weiter unten.",
+                ]},
+            ]],
+            ["schlummern", "Ist Schlummern ein Intervall-Wecker?", [
+                "Schlummern wiederholt einen Wecker nach ein paar Minuten. Auf manchen Handys lassen sich dafür ein Intervall und die Zahl der Wiederholungen einstellen – bei Samsung zum Beispiel direkt im jeweiligen Wecker. Ein Intervall-Wecker ist das trotzdem nicht: Schlummern gehört zu einem einzelnen Wecker und ist fürs Aufstehen gedacht. Sobald du den Wecker ausschaltest, ist die Reihe vorbei.",
+            ]],
+            ["arten", "Erinnerung, Intervall-Timer oder Intervall-Wecker?", [
+                {"table": [
+                    ["", "Wiederkehrende Erinnerung", "Intervall-Timer", "Intervall-Wecker"],
+                    ["Signal", "Benachrichtigung, oft mit kurzem Ton", "Ton am Ende jeder Runde", "Klingelt wie ein Wecker"],
+                    ["Gesperrter Bildschirm", "Erscheint als Benachrichtigung", "Je nach App", "Sollte über dem Sperrbildschirm erscheinen"],
+                    ["Nächste Runde", "Zu festen Zeiten", "Sofort, von selbst", "Von selbst – je nach App zu festen Zeiten oder ab deiner Reaktion"],
+                    ["Typisch für", "Wasser trinken, dehnen", "Training, Konzentrationsblöcke", "Wiederkehrendes, das du nicht verpassen willst"],
+                ]},
+                "Wenn ein verpasstes Klingeln etwas ausmacht, nimm einen Wecker, keine Erinnerung: Eine Benachrichtigung übersieht man leicht. Und wenn es ums Wachbleiben geht, gibt es eine vierte Art – den Wach-Check, der erst fragt und nur klingelt, wenn keine Antwort kommt: [Ein Wecker, der prüft, ob du noch wach bist](/de/anleitungen/wecker-der-prueft-ob-du-wach-bist/).",
+            ]],
+            ["auswahl", "Worauf du bei einer Intervall-Wecker-App achtest", [
+                {"list": [
+                    "**Lässt sich jedes Intervall einstellen** – oder nur feste Stufen wie 15, 30 und 60 Minuten?",
+                    "**Beginnt das nächste Intervall zu festen Zeiten oder ab deiner Reaktion?** Ab der Reaktion heißt: Nach jedem Klingeln hast du wieder die volle Zeit.",
+                    "**Hört sie von selbst auf** – nach einer festen Dauer, zu einer Uhrzeit oder nach Zeitplan –, damit sie nicht in den nächsten Tag hineinklingelt?",
+                    "**Klingelt sie auch bei dunklem Bildschirm und gesperrtem Telefon?** Dafür braucht sie exakte Alarme und die passenden Berechtigungen; wie du das prüfst, steht in [Android-Wecker klingelt nicht](/de/anleitungen/android-wecker-klingelt-nicht/).",
+                ]},
+            ]],
+        ],
+        "app": {
+            "h2": "Stay Awake: jedes Intervall von 1 Minute bis 12 Stunden",
+            "body": [
+                "Stay Awake ist eine Intervall-App fürs Wachbleiben. Das Intervall stellst du mit einem Regler ein – jeder Wert von einer Minute bis zwölf Stunden –, und die App nutzt exakte Alarme. Sie klingelt nicht sofort los: Jede Runde beginnt mit einer leisen Frage auf dem Bildschirm, „Bist du noch wach?“. Ein Tippen, und das nächste Intervall beginnt ab diesem Moment. Keine Antwort: Vibration nach 10 Sekunden, Alarm nach 20.",
+                "Drei Arten, sie laufen zu lassen: **Unbegrenzt**, bis du sie beendest, als **Timer** für eine feste Zeit („für 2 Stunden“) oder bis zu einer Uhrzeit („bis 6:00“), oder als **Zeitplan**, der an den gewählten Wochentagen von selbst beginnt.",
+                "Wenn du nur jede Stunde einen kurzen Ton willst, der keine Antwort braucht, passt eine Erinnerungs-App oder ein Stundensignal besser.",
+            ],
+            "shot": "de-timer.webp",
+            "alt": "Timer: Für 2:00 Std., Check-Intervall 30 Minuten.",
+        },
+        "faq": [
+            ["Kann Android einen Wecker jede Stunde klingeln lassen?",
+             ["Nicht mit einem einzigen Wecker: Die Uhr-Apps der meisten Android-Handys wiederholen nur nach Wochentagen. Leg pro Stunde einen Wecker an – acht für eine Nacht von acht Stunden – oder nimm eine Intervall-Wecker-App."]],
+            ["Wie stelle ich unter Android einen Wecker alle 10 oder 15 Minuten?",
+             ["Einzelne Wecker sind bei diesem Takt nicht mehr sinnvoll (32 bis 48 für acht Stunden). Starte den Timer der Uhr-App bei jedem Klingeln neu oder nimm eine Intervall-Wecker-App, die von selbst wiederholt."]],
+            ["Ist Schlummern dasselbe wie ein Intervall-Wecker?",
+             ["Nein. Schlummern wiederholt einen einzelnen Wecker eine Zeit lang und endet, sobald du ihn ausschaltest. Ein Intervall-Wecker behält seinen Takt bis zu dem Ende, das du festlegst."]],
+            ["Welches Intervall ist sinnvoll, um wach zu bleiben?",
+             ["Das hängt davon ab, wie schnell du wegdämmerst. Stay Awake beginnt mit 30 Minuten; ist dir das zu lang, stell es kürzer. Möglich ist jeder Wert von einer Minute bis zwölf Stunden."]],
+        ],
+    },
+]

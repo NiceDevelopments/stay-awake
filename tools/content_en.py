@@ -403,7 +403,7 @@ C = {
                 ["Why doesn’t my interval alarm ring when the screen is off?",
                  ["Often battery optimisation or a missing permission for exact alarms is the cause. See [Android alarm not going off](/guides/android-alarm-not-going-off/)."]],
                 ["Can I set an interval of 15 or 45 minutes?",
-                 ["In Stay Awake, yes: the dial goes from one minute to twelve hours."]],
+                 ["In Stay Awake, yes: the dial goes from one minute to twelve hours. Other intervals without an app: [interval alarm on Android](/guides/interval-alarm-android/)."]],
             ],
         },
         {
@@ -518,3 +518,167 @@ C = {
         },
     ],
 }
+
+# Neu 24.11.2026 (SEO-Fahrplan). Suchvorschlaege (Google, 23./24.11.): "interval alarm android",
+# "repeating alarm android/app", "alarm every 10/15 minutes android", "alarm every hour android",
+# "set alarm every hour android", "hourly alarm android" -> interval page. "how to stay awake after
+# alarm goes off", "how to not fall asleep after turning off alarm", "why do i keep falling asleep
+# after my alarm" -> after-alarm page. App rule: Stay Awake is made for staying awake, not for
+# waking up - the page says so.
+#
+# Abgrenzung (Lektorat 24.11.2026), damit sich die Seiten nicht gegenseitig die Suchanfragen nehmen:
+# - interval-alarm-android = Ueberblick NACH INTERVALL: welcher Weg zu welchem Intervall passt,
+#   Schritt fuer Schritt "jede Stunde", kurze Intervalle, Schlummern, Auswahl einer App.
+# - alarm-every-30-minutes-android = Schritt-fuer-Schritt fuer genau dieses eine Intervall
+#   (drei Wege). Die drei Wege hier nicht noch einmal ausbreiten, nur verlinken.
+# - alarm-that-checks-if-you-are-awake = das Prinzip Wach-Check. Hier nur verlinken.
+# Die Tabelle "Reminder / Interval timer / Interval alarm" darf der Tabelle auf der Wach-Check-Seite
+# nicht widersprechen (dort: ein einfacher Wiederholungswecker klingelt und hoert dann auf).
+C["guides"] += [
+    {
+        "id": "interval",
+        "slug": "interval-alarm-android",
+        "title": "Interval alarm on Android: every 10 or 15 minutes, or every hour",
+        "desc": "Interval alarm on Android: an alarm every hour with the clock app, every 10 or 15 minutes with a timer or an app – and why snooze is not the same thing.",
+        "h1": "Interval alarm on Android: every 10 or 15 minutes, or every hour",
+        "teaser": "Every hour with the clock app, shorter intervals with a timer or an app.",
+        "answer": "An **interval alarm** (or repeating alarm) rings every few minutes or every hour instead of once at a set time. The clock apps on most Android phones have no setting for that – they repeat by **weekday**. Which workaround fits depends on the interval: for **every hour or longer**, a handful of single alarms does the job; for **every 10 or 15 minutes** you need a timer you restart or an **interval alarm app**.",
+        "updated": "2026-11-24",
+        "updated_label": "24 November 2026",
+        "sections": [
+            ["which", "Which way fits which interval", [
+                "Without an app you need one alarm per ring. Counted for eight hours:",
+                {"table": [
+                    ["Interval", "Alarms for 8 hours", "With the clock app alone"],
+                    ["10 minutes", "48", "Too many – timer or app"],
+                    ["15 minutes", "32", "Too many – timer or app"],
+                    ["20 minutes", "24", "Too many – timer or app"],
+                    ["30 minutes", "16", "Possible, but tedious"],
+                    ["Every hour", "8", "Works well"],
+                    ["Every 2 hours", "4", "Works well"],
+                ]},
+                "For exactly 30 minutes there is a separate step-by-step guide: [alarm every 30 minutes on Android](/guides/alarm-every-30-minutes-android/).",
+            ]],
+            ["hourly", "How to set an alarm every hour", [
+                {"steps": [
+                    "Open the clock app and go to **Alarm**.",
+                    "Add an alarm for the first hour you need, for example 10 p.m.",
+                    "Add one more for each following hour – 11 p.m., midnight and so on.",
+                    "If it should come back on certain days, pick the same **weekdays** for all of them.",
+                    "Give them a label such as “hourly”, if your clock app offers labels – that makes them easier to find later.",
+                ]},
+                "Two things to know: the alarms ring at fixed times whether you are awake or not, and afterwards you switch them off again one by one.",
+                "Many digital watches and some smartwatches have an **hourly chime** – a short beep on the hour. That is a time signal, not an alarm: it does not wait for a reaction.",
+            ]],
+            ["short", "An alarm every 10 or 15 minutes", [
+                "At these intervals single alarms are out – 32 or 48 of them for one night. That leaves two ways:",
+                {"list": [
+                    "**Restart a timer.** Set the clock app’s timer to 10:00 or 15:00 and start it again each time it rings. Enough for an hour or two while you are busy anyway; miss one restart and the series is over.",
+                    "**An interval alarm app.** It repeats by itself. What to look for is further down.",
+                ]},
+            ]],
+            ["snooze", "Is snooze an interval alarm?", [
+                "Snooze repeats an alarm after a few minutes. On some phones you can set the snooze interval and the number of repeats – on Samsung phones, for example, right in each alarm. It still is not an interval alarm: snooze belongs to one single alarm and is meant for getting up. As soon as you dismiss the alarm, the series is over.",
+            ]],
+            ["kinds", "Reminder, interval timer or interval alarm?", [
+                {"table": [
+                    ["", "Repeating reminder", "Interval timer", "Interval alarm"],
+                    ["Signal", "Notification, often with a short sound", "Sound at the end of each round", "Rings like an alarm"],
+                    ["Locked screen", "Shows as a notification", "Depends on the app", "Should show over the lock screen"],
+                    ["Next round", "At fixed times", "Right away, by itself", "By itself – at fixed times or from your reaction, depending on the app"],
+                    ["Typical use", "Drink water, stretch", "Workouts, focus blocks", "Recurring things you don’t want to miss"],
+                ]},
+                "If missing a ring would matter, pick an alarm, not a reminder: a notification is easy to overlook. And if the point is to stay awake, there is a fourth kind – a wake check, which asks first and only rings when no answer comes: [an alarm that checks if you are still awake](/guides/alarm-that-checks-if-you-are-awake/).",
+            ]],
+            ["check", "What to look for in an interval alarm app", [
+                {"list": [
+                    "**Can you set any interval** – or only fixed steps such as 15, 30 and 60 minutes?",
+                    "**Does the next interval start at fixed times or from your reaction?** From your reaction means you get the full time again after every ring.",
+                    "**Does it end by itself** – after a set duration, at a clock time or by schedule – so it doesn’t ring on into the next day?",
+                    "**Does it still ring with the screen off and the phone locked?** That takes exact alarms and the right permissions; how to check them is in [Android alarm not going off](/guides/android-alarm-not-going-off/).",
+                ]},
+            ]],
+        ],
+        "app": {
+            "h2": "Stay Awake: any interval from 1 minute to 12 hours",
+            "body": [
+                "Stay Awake is an interval app made for staying awake. You set the interval with a dial – any value from one minute to twelve hours – and it uses exact alarms. It does not ring straight away: each round starts with a quiet question on the screen, “Are you still awake?”. One tap and the next interval starts from that moment. No answer: vibration after 10 seconds, alarm after 20.",
+                "Three ways to run it: **Unlimited** until you end it, as a **Timer** for a set time (“for 2 hours”) or until a clock time (“until 6:00”), or as a **schedule** that starts by itself on the weekdays you choose.",
+                "If all you want is a short beep every hour that needs no answer, a reminder app or an hourly chime is the better fit.",
+            ],
+            "shot": "en-timer.webp",
+            "alt": "Timer mode: for 2:00 h, check interval 30 minutes.",
+        },
+        "faq": [
+            ["Can Android set an alarm every hour?",
+             ["Not with a single alarm: the clock apps on most Android phones repeat by weekday only. Create one alarm per hour – eight for an eight-hour night – or use an interval alarm app."]],
+            ["How do I set an alarm every 10 or 15 minutes on Android?",
+             ["Single alarms make no sense at that pace (32 to 48 for eight hours). Restart the clock app’s timer each time it rings, or use an interval alarm app that repeats by itself."]],
+            ["Is snooze the same as an interval alarm?",
+             ["No. Snooze repeats one single alarm for a while and ends as soon as you dismiss it. An interval alarm keeps its rhythm until the end you set."]],
+            ["Which interval makes sense for staying awake?",
+             ["That depends on how quickly you drift off. Stay Awake starts with 30 minutes; if that feels too long, go shorter. Any value from one minute to twelve hours works."]],
+        ],
+    },
+    {
+        "id": "afteralarm",
+        "slug": "how-to-stay-awake-after-alarm",
+        "title": "How to stay awake after your alarm goes off (and not fall back asleep)",
+        "desc": "Why you fall back asleep after turning off the alarm, and how to stay up: alarm out of reach, light, a fixed first step and a second check minutes later.",
+        "h1": "How to stay awake after your alarm goes off",
+        "teaser": "Why the alarm is not enough, and how to get past the first ten minutes.",
+        "answer": "Falling back asleep after the alarm is rarely about the alarm being too quiet. More often you turn it off **half asleep, lie back down** – and nothing comes after it. What helps is making the first ten minutes hard to sleep through: put the alarm **out of reach** so you have to stand up, switch on **bright light**, have a **fixed first step** ready – and let something **ask again a few minutes later** whether you are really up.",
+        "updated": "2026-11-24",
+        "updated_label": "24 November 2026",
+        "sections": [
+            ["why", "Why it happens", [
+                "Turning off an alarm takes one hand and no thought. If the phone is next to your pillow, you can do it without opening your eyes properly – and then nothing follows. For many people snoozing does not help either: every snooze is another chance to doze off for real.",
+                "An alarm is built to wake you once. Staying up afterwards is a different job – and nobody checks whether you actually got out of bed.",
+            ]],
+            ["tips", "Ways that work for many people", [
+                {"steps": [
+                    "**Alarm out of reach.** Put the phone on the other side of the room. Once you are standing, lying back down takes a decision.",
+                    "**Light straight away.** Switch on the main light or open the curtains before you do anything else.",
+                    "**A fixed first step.** The same thing every morning: glass of water, bathroom, kettle on. The less you have to decide, the less you negotiate with yourself.",
+                    "**No lying down “for a minute”.** Sitting back down on the edge of the bed is how many people end up asleep again.",
+                    "**One alarm, not five.** If you want a backup, set one a few minutes later – not a chain of snoozes.",
+                    "**A second check.** Something that asks again after five or ten minutes whether you are still up, and gets loud if no answer comes.",
+                ]},
+            ]],
+            ["plan", "A plan for the first ten minutes", [
+                {"table": [
+                    ["When", "What you do"],
+                    ["Alarm rings", "Stand up to turn it off – it is on the other side of the room."],
+                    ["Minute 1", "Main light on or curtains open."],
+                    ["Minutes 2 to 5", "Your fixed first step: glass of water, bathroom, kettle on."],
+                    ["Minutes 5 to 10", "The second check asks whether you are still up."],
+                ]},
+            ]],
+            ["second", "The second check", [
+                "A second alarm at a fixed time rings whether you are up or not – in the shower, at breakfast – and it is just as easy to turn off half asleep as the first one. A check that **asks first** is different: if you are up, one tap and it stays quiet; if you have dozed off again and do not answer, it gets loud.",
+                "Without an app: ask someone who is up at that time to message you a few minutes after your alarm, and to call if you do not answer.",
+                {"note": "No trick and no app replaces sleep. If you are short on sleep night after night, getting up stays hard whatever you set up."},
+            ]],
+        ],
+        "app": {
+            "h2": "Stay Awake as the second check",
+            "body": [
+                "Stay Awake is not an alarm clock – it is made for staying awake, not for waking up, and it cannot get you out of bed. What it can do is ask in the minutes after your alarm.",
+                "Set up a **schedule** that starts by itself: if your alarm rings at 6:30, for example from 6:35 to 7:05 on your workdays, with a five-minute interval. Or start a **Timer** session for half an hour by hand once you are up.",
+                "Five minutes after the session starts, and every five minutes from your last answer, the screen asks whether you are still awake. One tap and the next round starts; no answer, and the phone vibrates after 10 seconds and sounds an alarm after 20. At the end time the session ends by itself.",
+            ],
+            "shot": "en-check.webp",
+            "alt": "Check screen: Are you still awake?, or shake the phone, large Yes button, End session.",
+        },
+        "faq": [
+            ["Why do I keep falling asleep after my alarm?",
+             ["Often because turning it off is too easy: the phone is within reach, the room is dark, and nothing happens afterwards. Moving the alarm away and adding a second check a few minutes later breaks that pattern for many people."]],
+            ["How do I not fall asleep after turning off my alarm?",
+             ["Stand up before you turn it off, switch on bright light, and do the same first step every morning. A check a few minutes later asks again – and gets loud if you do not answer."]],
+            ["Is snoozing bad?",
+             ["For many people snoozing just means several short dozes instead of getting up. If you want a backup, one second alarm or one check a few minutes later is simpler than a chain of snoozes."]],
+            ["Can Stay Awake replace my alarm clock?",
+             ["No. Stay Awake is made for staying awake, not for waking up. Keep your alarm clock and let Stay Awake ask in the minutes after it."]],
+        ],
+    },
+]

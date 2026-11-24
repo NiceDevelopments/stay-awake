@@ -55,6 +55,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/android-alarm-not-going-off/"/>
   </url>
   <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/intervall-wecker-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-after-alarm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-after-alarm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-after-alarm/"/>
+  </url>
+  <url>
     <loc>https://nicedevelopments.github.io/stay-awake/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
@@ -107,5 +118,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/android-alarm-not-going-off/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/android-wecker-klingelt-nicht/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/android-alarm-not-going-off/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/de/anleitungen/intervall-wecker-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/intervall-wecker-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
   </url>
 </urlset>
