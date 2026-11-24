@@ -35,22 +35,26 @@ sys.path.insert(0, str(ROOT / "tools"))
 SITE = "https://nicedevelopments.github.io"
 BASE = "/stay-awake"
 PLAY_ID = "com.nicedevelopments.stayawake"
-PLAY_HL = {"de": "de", "en": "en"}
+PLAY_HL = {"de": "de", "en": "en", "es": "es", "pt": "pt-BR", "fr": "fr", "id": "id"}
 SHOT_W, SHOT_H = 540, 1145
 
-LOCALES = ["en", "de"]
+# es/pt/fr/id seit 24.11.2026 als Pilot: Startseite + 3 Anleitungen (Messung 22.12./05.01., Fahrplan).
+# Eine Sprache ist aktiv, sobald tools/content_<code>.py existiert.
+LOCALES = [c for c in ["en", "de", "es", "pt", "fr", "id"] if (ROOT / "tools" / f"content_{c}.py").exists()]
 C = {code: importlib.import_module(f"content_{code}").C for code in LOCALES}
 LEGAL = {
     "de": {"privacy": "/datenschutz/", "imprint": "/impressum/"},
     "en": {"privacy": "/privacy/", "imprint": "/imprint/"},
 }
+for _c in ("es", "pt", "fr", "id"):   # Rechtsseiten gibt es nur de/en; die neuen Sprachen zeigen die englischen
+    LEGAL[_c] = LEGAL["en"]
 
 e = html.escape
 
 
 # Englisch ist die Hauptsprache und liegt an der Wurzel (Entscheidung des Inhabers, 21.11.2026);
 # jede weitere Sprache bekommt ein eigenes Verzeichnis /<code>/.
-GUIDES_DIR = {"en": "guides", "de": "anleitungen"}
+GUIDES_DIR = {"en": "guides", "de": "anleitungen", "es": "guias", "pt": "guias", "fr": "guides", "id": "panduan"}
 
 # Adressen, die am 21.11.2026 kurz online waren (de an der Wurzel, en unter /en/). Sie leiten auf
 # die neuen Adressen weiter, falls Google oder jemand sie schon kennt.
@@ -138,7 +142,7 @@ def header(code: str, alts: dict[str, str], current: str = "") -> str:
     u = C[code]["ui"]
     other = [c for c in LOCALES if c != code]
     lang_links = "".join(
-        f'<a href="{href(alts.get(c, home_path(c)))}" hreflang="{c}" lang="{c}">{e(C[c]["lang_name"])}</a>'
+        f'<a href="{href(alts.get(c, home_path(c)))}" hreflang="{c}" lang="{c}" title="{e(C[c]["lang_name"])}">{c.upper()}</a>'
         for c in other)
     cur = ' aria-current="page"' if current == "guides" else ""
     return f"""
@@ -228,6 +232,11 @@ def escalation(code: str) -> str:
 LIVE = {
     "en": ("SESSION RUNNING", "until next check", "Unlimited", "Every 30 minutes · Tap or shake", "I am awake", "End session"),
     "de": ("SITZUNG LÄUFT", "bis zum nächsten Check", "Unbegrenzt", "Alle 30 Minuten · Tippen oder Schütteln", "Ich bin wach", "Sitzung beenden"),
+    # Texte aus app/src/main/res/values-<sprache>/strings.xml (session_*, summary_action_shake)
+    "es": ("SESIÓN EN CURSO", "hasta el próximo control", "Sin límite", "Cada 30 minutos · Tocar o agitar", "Estoy despierto", "Finalizar sesión"),
+    "pt": ("SESSÃO EM ANDAMENTO", "até a próxima verificação", "Sem limite", "A cada 30 minutos · Tocar ou agitar", "Estou acordado", "Encerrar sessão"),
+    "fr": ("SESSION EN COURS", "avant le prochain contrôle", "Illimité", "Intervalle\u00a0: 30 minutes · Toucher ou secouer", "Je suis éveillé", "Terminer la session"),
+    "id": ("SESI BERJALAN", "sampai cek berikutnya", "Tanpa batas", "Setiap 30 menit · Ketuk atau guncang", "Saya terjaga", "Akhiri sesi"),
 }
 
 

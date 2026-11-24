@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo poner una alarma cada 30 minutos en Android</title>
+<meta name="description" content="El reloj de Android no tiene la opción «cada 30 minutos». Tres formas que funcionan: varias alarmas, un temporizador reiniciado o una app de intervalos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/">
+<link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/">
+<link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/">
+<link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/">
+<link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/">
+<link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/">
+<link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/">
+<link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/">
+<meta name="color-scheme" content="dark light">
+<!-- Hintergrund sofort setzen, sonst blitzt beim Seitenwechsel kurz Weiss auf -->
+<style>html{background:#080B14;color:#E8ECF7}@media (prefers-color-scheme:light){html{background:#F3F4FA;color:#12162A}}</style>
+<meta name="theme-color" content="#E7E9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141B33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Stay Awake">
+<meta property="og:title" content="Cómo poner una alarma cada 30 minutos en Android">
+<meta property="og:description" content="El reloj de Android no tiene la opción «cada 30 minutos». Tres formas que funcionan: varias alarmas, un temporizador reiniciado o una app de intervalos.">
+<meta property="og:url" content="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/">
+<meta property="og:image" content="https://nicedevelopments.github.io/stay-awake/img/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="/stay-awake/img/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/stay-awake/img/icon-180.png">
+<link rel="stylesheet" href="/stay-awake/css/site.css?v=e58147ff">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cómo poner una alarma cada 30 minutos en Android", "description": "El reloj de Android no tiene la opción «cada 30 minutos». Tres formas que funcionan: varias alarmas, un temporizador reiniciado o una app de intervalos.", "inLanguage": "es", "dateModified": "2026-11-24", "datePublished": "2026-11-24", "url": "https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/", "mainEntityOfPage": "https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/", "image": "https://nicedevelopments.github.io/stay-awake/img/en-home.webp", "author": {"@type": "Organization", "name": "Nice Developments"}, "publisher": {"@type": "Organization", "name": "Nice Developments", "logo": {"@type": "ImageObject", "url": "https://nicedevelopments.github.io/stay-awake/img/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Stay Awake", "item": "https://nicedevelopments.github.io/stay-awake/es/"}, {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://nicedevelopments.github.io/stay-awake/es/guias/"}, {"@type": "ListItem", "position": 3, "name": "Cómo poner una alarma cada 30 minutos en Android", "item": "https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puede el reloj de Android repetir una alarma cada 30 minutos?", "acceptedAnswer": {"@type": "Answer", "text": "Las apps de reloj de la mayoría de los teléfonos Android solo repiten por días de la semana. Para cada 30 minutos necesitas varias alarmas, un temporizador o una app aparte."}}, {"@type": "Question", "name": "¿Por qué no suena mi alarma por intervalos con la pantalla apagada?", "acceptedAnswer": {"@type": "Answer", "text": "A menudo la causa es la optimización de batería o que falta el permiso para alarmas exactas. Revisa en los ajustes de Android que la app no tenga restringido el uso de la batería."}}, {"@type": "Question", "name": "¿Se puede poner un intervalo de 15 o 45 minutos?", "acceptedAnswer": {"@type": "Answer", "text": "En Stay Awake, sí: el selector va de un minuto a doce horas. Sin app, para cada 15 minutos necesitarías 32 alarmas en una noche de 8 horas."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="site">
+  <div class="wrap wide">
+    <a class="brand" href="/stay-awake/es/"><img src="/stay-awake/img/icon-48.png" width="30" height="30" alt="">Stay <span>Awake</span></a>
+    <nav class="site" aria-label="Navegación principal">
+      <a href="/stay-awake/es/guias/" aria-current="page">Guías</a>
+      <a href="/stay-awake/guides/alarm-every-30-minutes-android/" hreflang="en" lang="en" title="English">EN</a><a href="/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/" hreflang="pt" lang="pt" title="Português">PT</a><a href="/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/" hreflang="fr" lang="fr" title="Français">FR</a><a href="/stay-awake/id/panduan/alarm-setiap-30-menit-android/" hreflang="id" lang="id" title="Bahasa Indonesia">ID</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <article class="guide">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Ruta de navegación"><a href="/stay-awake/es/">Stay Awake</a> / <a href="/stay-awake/es/guias/">Guías</a></nav>
+      <h1>Cómo poner una alarma cada 30 minutos en Android</h1>
+      <p class="lead answer">Las apps de reloj de la mayoría de los teléfonos Android repiten una alarma solo <strong>por días de la semana</strong>, no cada X minutos. Tienes tres opciones: <strong>crear varias alarmas</strong>, <strong>reiniciar un temporizador</strong> cada vez o usar una <strong>app de alarma por intervalos</strong>.</p>
+      <p class="stand">Actualizado: 24 de noviembre de 2026</p>
+      <nav class="toc" aria-label="En esta página"><p>En esta página</p><ol><li><a href="#several">Opción 1: varias alarmas</a></li><li><a href="#timer">Opción 2: reiniciar un temporizador</a></li><li><a href="#app">Opción 3: una app de alarma por intervalos</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ol></nav>
+      <h2 id="several">Opción 1: varias alarmas</h2><p>Crea en la app de reloj una alarma por cada media hora. Para una tarde está bien; para una noche entera se hace largo:</p><div class="table-scroll"><table><thead><tr><th scope="col">Periodo</th><th scope="col">Intervalo</th><th scope="col">Alarmas necesarias</th></tr></thead><tbody><tr><td>2 horas</td><td>30 min</td><td>4</td></tr><tr><td>8 horas (22:00–06:00)</td><td>30 min</td><td>16</td></tr><tr><td>8 horas</td><td>15 min</td><td>32</td></tr></tbody></table></div><p>Inconvenientes: hay que crearlas una a una, y las alarmas siguen sonando a horas fijas aunque estés bien despierto. Después tienes que desactivarlas todas otra vez.</p><h2 id="timer">Opción 2: reiniciar un temporizador</h2><ol class="steps"><li>Abre la app de reloj y ve a <strong>Temporizador</strong>.</li><li>Pon <strong>30:00</strong> e inícialo.</li><li>Cuando suene, detenlo y vuelve a iniciarlo.</li></ol><p>Sencillo, pero tienes que reiniciarlo cada vez. Si se te olvida una sola vez, ya no pasa nada el resto de la noche.</p><h2 id="app">Opción 3: una app de alarma por intervalos</h2><p>Las apps de alarma por intervalos se repiten solas. Antes de elegir una, comprueba tres cosas:</p><ul><li><strong>¿Suena con la pantalla apagada y el teléfono bloqueado?</strong> Muchas apps solo funcionan en primer plano.</li><li><strong>¿Usa alarmas exactas?</strong> Si no, Android puede retrasarla en modo de ahorro de batería.</li><li><strong>¿Qué pasa si no reaccionas?</strong> Una alarma repetida simple suena un rato y luego se detiene.</li></ul>
+      <section class="app-box" aria-labelledby="app-h"><div class="app-box__text"><p class="kicker">Con la app</p><h2 id="app-h">Una alarma por intervalos que pregunta primero</h2><p>Stay Awake se repite con el intervalo que elijas, cualquier valor de un minuto a doce horas, y usa alarmas exactas. No suena de golpe: primero pregunta en silencio si sigues despierto. Responde y el intervalo vuelve a empezar desde ese momento. Sin respuesta: vibración a los 10 segundos, alarma a los 20.</p><p>Así no te sobresalta cuando estás despierto, y no te deja solo cuando no lo estás.</p><p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=es">Disponible en Google Play</a><span class="cta__note">Gratis para Android · sin cuenta</span></p></div><div class="app-box__shot"><figure class="phone"><img src="/stay-awake/img/en-home.webp" width="220" height="466" alt="Selector en 30 minutos, Sin límite o Temporizador, Empezar sesión (captura de la app en inglés)." decoding="async" loading="lazy"></figure></div></section>
+      <h2 id="faq">Preguntas frecuentes</h2>
+      <div class="faq"><details><summary>¿Puede el reloj de Android repetir una alarma cada 30 minutos?</summary><div class="answer"><p>Las apps de reloj de la mayoría de los teléfonos Android solo repiten por días de la semana. Para cada 30 minutos necesitas varias alarmas, un temporizador o una app aparte.</p></div></details><details><summary>¿Por qué no suena mi alarma por intervalos con la pantalla apagada?</summary><div class="answer"><p>A menudo la causa es la optimización de batería o que falta el permiso para alarmas exactas. Revisa en los ajustes de Android que la app no tenga restringido el uso de la batería.</p></div></details><details><summary>¿Se puede poner un intervalo de 15 o 45 minutos?</summary><div class="answer"><p>En Stay Awake, sí: el selector va de un minuto a doce horas. Sin app, para cada 15 minutos necesitarías 32 alarmas en una noche de 8 horas.</p></div></details></div>
+      <h2>Más guías</h2>
+      <ul class="related"><li><a href="/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/">Cómo mantenerse despierto para trabajar de noche</a></li><li><a href="/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/">Cómo mantenerse despierto toda la noche</a></li></ul>
+    </div>
+  </article>
+</main>
+
+<footer class="site">
+  <div class="wrap wide foot">
+    <p><strong>Stay Awake</strong> · La alarma que pregunta si sigues despierto. Para Android.</p>
+    <p><a href="/stay-awake/es/guias/">Guías</a> · <a href="/stay-awake/privacy/">Privacidad</a> · <a href="/stay-awake/imprint/" rel="nofollow">Aviso legal</a> · <a href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=es">Google Play</a> · <a href="https://nicedevelopments.github.io/">Más apps de Nice Developments</a></p>
+    <p class="fine">Nice Developments · Google Play y Android son marcas de Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>

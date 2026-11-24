@@ -4,18 +4,30 @@
     <loc>https://nicedevelopments.github.io/stay-awake/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
     <loc>https://nicedevelopments.github.io/stay-awake/guides/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
   </url>
   <url>
     <loc>https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
   </url>
   <url>
@@ -28,6 +40,10 @@
     <loc>https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
   </url>
   <url>
@@ -40,6 +56,10 @@
     <loc>https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
   </url>
   <url>
@@ -69,18 +89,30 @@
     <loc>https://nicedevelopments.github.io/stay-awake/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
     <loc>https://nicedevelopments.github.io/stay-awake/de/anleitungen/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
   </url>
   <url>
     <loc>https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
   </url>
   <url>
@@ -93,6 +125,10 @@
     <loc>https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
   </url>
   <url>
@@ -105,6 +141,10 @@
     <loc>https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
   </url>
   <url>
@@ -124,5 +164,205 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/intervall-wecker-android/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/interval-alarm-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/es/guias/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pt/guias/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/fr/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/id/panduan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wecker-alle-30-minuten-android/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/alarma-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/alarme-toutes-les-30-minutes-android/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/alarm-setiap-30-menit-android/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/alarm-every-30-minutes-android/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/wach-bleiben-nachtschicht/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-turno-de-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-la-nuit-au-travail/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-agar-tidak-ngantuk-saat-kerja-malam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-on-night-shift/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/anleitungen/die-ganze-nacht-wach-bleiben/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/guias/como-mantenerse-despierto-toda-la-noche/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
   </url>
 </urlset>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay Awake: o alarme que pergunta se você ainda está acordado</title>
+<meta name="description" content="Um alarme toca uma vez, você desliga e dorme de novo. O Stay Awake continua perguntando se você ainda está acordado – e toca até você responder.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nicedevelopments.github.io/stay-awake/pt/">
+<link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/">
+<link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/">
+<link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/">
+<link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/">
+<link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/">
+<link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/">
+<link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/">
+<meta name="color-scheme" content="dark light">
+<!-- Hintergrund sofort setzen, sonst blitzt beim Seitenwechsel kurz Weiss auf -->
+<style>html{background:#080B14;color:#E8ECF7}@media (prefers-color-scheme:light){html{background:#F3F4FA;color:#12162A}}</style>
+<meta name="theme-color" content="#E7E9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141B33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stay Awake">
+<meta property="og:title" content="Stay Awake: o alarme que pergunta se você ainda está acordado">
+<meta property="og:description" content="Um alarme toca uma vez, você desliga e dorme de novo. O Stay Awake continua perguntando se você ainda está acordado – e toca até você responder.">
+<meta property="og:url" content="https://nicedevelopments.github.io/stay-awake/pt/">
+<meta property="og:image" content="https://nicedevelopments.github.io/stay-awake/img/icon-512.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="/stay-awake/img/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/stay-awake/img/icon-180.png">
+<link rel="stylesheet" href="/stay-awake/css/site.css?v=e58147ff">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "Stay Awake", "operatingSystem": "Android", "applicationCategory": "UtilitiesApplication", "description": "Um alarme toca uma vez, você desliga e dorme de novo. O Stay Awake continua perguntando se você ainda está acordado – e toca até você responder.", "url": "https://nicedevelopments.github.io/stay-awake/pt/", "image": "https://nicedevelopments.github.io/stay-awake/img/icon-512.png", "inLanguage": "pt", "screenshot": ["https://nicedevelopments.github.io/stay-awake/img/en-session.webp", "https://nicedevelopments.github.io/stay-awake/img/en-home.webp", "https://nicedevelopments.github.io/stay-awake/img/en-check.webp", "https://nicedevelopments.github.io/stay-awake/img/en-alarm.webp", "https://nicedevelopments.github.io/stay-awake/img/en-schedules.webp", "https://nicedevelopments.github.io/stay-awake/img/en-reliability.webp", "https://nicedevelopments.github.io/stay-awake/img/en-timer.webp", "https://nicedevelopments.github.io/stay-awake/img/en-settings.webp"], "installUrl": "https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "Nice Developments"}}, {"@type": "WebSite", "name": "Stay Awake", "url": "https://nicedevelopments.github.io/stay-awake/pt/", "inLanguage": "pt"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual é a diferença para um despertador comum?", "acceptedAnswer": {"@type": "Answer", "text": "Um despertador toca num horário, você estando acordado ou não. O Stay Awake pergunta primeiro e só toca alto se você não responder. Ele é feito para ficar acordado, não para acordar de manhã."}}, {"@type": "Question", "name": "Preciso deixar a tela ligada?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Deixe o celular de lado, bloqueie, deixe a tela apagar. A verificação aparece sobre a tela de bloqueio. Se você escolheu agitar, basta sacudir o celular para confirmar, mesmo com a tela apagada."}}, {"@type": "Question", "name": "Qual som de alarme ele usa?", "acceptedAnswer": {"@type": "Answer", "text": "Por padrão, o som de alarme do seu próprio celular. Nas configurações você pode trocar para a melodia do Stay Awake ou escolher outro som."}}, {"@type": "Question", "name": "Funciona sem internet?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Verificações, vibração e alarme rodam inteiramente no celular."}}, {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "Tudo o que mantém você acordado é grátis. A versão gratuita mostra um pequeno banner nas telas normais, nunca na verificação nem no alarme. O Stay Awake Pro remove o banner, com assinatura mensal ou pagamento único; o preço aparece no Google Play."}}, {"@type": "Question", "name": "Existe versão para iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Não, o Stay Awake só está disponível para Android."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="site">
+  <div class="wrap wide">
+    <a class="brand" href="/stay-awake/pt/"><img src="/stay-awake/img/icon-48.png" width="30" height="30" alt="">Stay <span>Awake</span></a>
+    <nav class="site" aria-label="Navegação principal">
+      <a href="/stay-awake/pt/guias/">Guias</a>
+      <a href="/stay-awake/" hreflang="en" lang="en" title="English">EN</a><a href="/stay-awake/de/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/stay-awake/es/" hreflang="es" lang="es" title="Español">ES</a><a href="/stay-awake/fr/" hreflang="fr" lang="fr" title="Français">FR</a><a href="/stay-awake/id/" hreflang="id" lang="id" title="Bahasa Indonesia">ID</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap wide hero__grid">
+    <div class="hero__text">
+      <p class="kicker">Para quem precisa ficar acordado</p>
+      <h1>Um alarme toca uma vez. O Stay Awake continua perguntando.</h1>
+      <p class="lead">Você conhece a cena: o alarme toca, você desliga – e cinco minutos depois já está dormindo de novo. O Stay Awake não fica em um aviso só. A cada 30 minutos, ou no intervalo que você escolher, ele pergunta: <strong>Você ainda está acordado?</strong> Agite o celular ou toque em Sim, e a próxima rodada começa. Sem resposta? O celular vibra após 10 segundos e, após 20, toca um alarme – até você responder.</p>
+      <p class="who">Turnos da noite · plantões · noites de estudo · esperas de madrugada</p>
+      <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=pt-BR">Disponível no Google Play</a><span class="cta__note">Grátis para Android · sem conta</span></p>
+    </div>
+    <div class="hero__shot"><div class="halo" aria-hidden="true"></div><figure class="phone live" role="img" aria-label="Sessão em andamento: um anel âmbar em volta da contagem regressiva 29:50, abaixo “até a próxima verificação”, “Sem limite”, “A cada 30 minutos · Tocar ou agitar”, o botão “Estou acordado” e “Encerrar sessão”.">
+      <div class="live__screen" aria-hidden="true">
+        <span class="live__title">SESSÃO EM ANDAMENTO</span>
+        <svg class="live__ring" viewBox="0 0 100 100"><circle class="live__glow" cx="50" cy="50" r="44"/><circle class="live__track" cx="50" cy="50" r="44"/><circle class="live__arc" cx="50" cy="50" r="44" stroke-dasharray="276.46" stroke-dashoffset="1.54" data-circ="276.46"/></svg>
+        <span class="live__time" data-left="1790">29:50</span>
+        <span class="live__until">até a próxima verificação</span>
+        <span class="live__mode">Sem limite</span>
+        <span class="live__every">A cada 30 minutos · Tocar ou agitar</span>
+        <span class="live__btn">Estou acordado</span>
+        <span class="live__end">Encerrar sessão</span>
+        <span class="live__bar"></span>
+      </div>
+    </figure>
+    <script>
+    (function () {
+      var t = document.querySelector(".live__time"), arc = document.querySelector(".live__arc");
+      if (!t || !arc) return;
+      var full = 1800, left = +t.dataset.left, circ = +arc.dataset.circ;
+      function show() {
+        var m = Math.floor(left / 60), s = left % 60;
+        t.textContent = m + ":" + (s < 10 ? "0" : "") + s;
+        arc.style.strokeDashoffset = (circ * (full - left) / full).toFixed(2);
+      }
+      setInterval(function () { left = left > 0 ? left - 1 : full; show(); }, 1000);
+    })();
+    </script></div>
+  </div></section>
+
+  <section class="why"><div class="wrap wide">
+    <h2>Por que um alarme comum não basta</h2>
+    <p class="lead">Um alarme é feito para acordar você uma vez. Ficar acordado é aguentar hora após hora – e o difícil é o momento em que ninguém confere se você ainda está aí.</p>
+    <div class="why__grid"><div class="why__col why__col--0"><h3>Um alarme comum</h3><ul><li>Toca uma vez – no horário que você definiu antes.</li><li>Você desliga meio dormindo, e depois não vem mais nada.</li><li>Nunca pergunta se você ainda está acordado.</li></ul></div><div class="why__col why__col--1"><h3>Stay Awake</h3><ul><li>Pergunta de novo e de novo, a noite toda – no intervalo que você escolher, de um minuto a doze horas.</li><li>Primeiro pergunta em silêncio. Só se você não responder ele vibra e depois toca.</li><li>O alarme toca até você responder. Depois começa a próxima rodada.</li></ul></div></div>
+  </div></section>
+
+  <section class="steps-band"><div class="wrap wide">
+    <h2>O que acontece quando chega uma verificação</h2>
+    <p class="lead">Primeiro de leve, alto só se for preciso. Cada etapa para no momento em que você responde.</p>
+    <ol class="esc"><li class="esc__step esc__step--0"><span class="esc__t">0 s</span><b>A pergunta</b><span class="esc__d">A tela acende – também sobre a tela de bloqueio – e pergunta: Você ainda está acordado?</span></li><li class="esc__step esc__step--1"><span class="esc__t">10 s</span><b>Vibração</b><span class="esc__d">Ainda sem resposta? O celular começa a vibrar.</span></li><li class="esc__step esc__step--2"><span class="esc__t">20 s</span><b>Alarme</b><span class="esc__d">Ainda nada: um alarme de verdade com o som de alarme do seu celular.</span></li><li class="esc__step esc__step--3"><span class="esc__t">Sim</span><b>Próxima rodada</b><span class="esc__d">Um toque ou uma sacudida: tudo para e o intervalo inteiro começa de novo.</span></li></ol>
+  </div></section>
+
+  <section class="features"><div class="wrap wide">
+    <h2>Começar, confirmar, agendar, conferir</h2>
+    <ul class="feature-grid"><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-home.webp" width="230" height="487" alt="Tela inicial: Sem limite ou Timer, um seletor redondo em 30 minutos e o botão Começar sessão (captura do app em inglês)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Começar</p><h3>Duas decisões, um botão</h3><p><strong>Sem limite</strong> ou <strong>Timer</strong>, e de quanto em quanto tempo o app deve perguntar. Gire o seletor – de um minuto a doze horas, 30 minutos para começar. O app lembra a sua última escolha.</p><p>O timer dura um tempo fixo (“por 2 horas”) ou até um horário (“até 5:30”).</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-check.webp" width="230" height="487" alt="A verificação: “Você ainda está acordado?”, abaixo “ou agite o celular”, uma linha de progresso, um botão grande Sim e, embaixo, Encerrar sessão (captura do app em inglês)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Confirmar</p><h3>Tocar, agitar, virar – você escolhe</h3><p>O botão grande <strong>Sim</strong> sempre funciona. Nas configurações você pode adicionar agitar o celular, virá-lo ou um botão de volume, em qualquer combinação. Agitar e virar funcionam também com a tela apagada.</p><p>Não precisa esperar a pergunta: confirme quando quiser, e o intervalo recomeça a partir daquele momento.</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-schedules.webp" width="230" height="487" alt="Agendamentos: das 22:00 às 6:00, de segunda a sexta, a cada 30 minutos, ativado (captura do app em inglês)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Turnos</p><h3>Agendamentos que começam sozinhos</h3><p>Para noites que se repetem: horário de início e de fim, dias da semana opcionais, intervalo. A sessão começa sozinha no horário definido e termina no horário de fim.</p><p>Sem nenhum dia selecionado, o agendamento roda uma única vez, no próximo início.</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-reliability.webp" width="230" height="487" alt="Checagem de confiabilidade: “Pronto” com nove itens verdes, das notificações à bateria (captura do app em inglês)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Confiabilidade</p><h3>Sabe o que o seu celular permite</h3><p>Celulares Android podem atrasar ou bloquear alarmes – economia de bateria, Não perturbe, permissões que faltam. A checagem de <strong>Confiabilidade</strong> passa por cada ponto em linguagem simples e mostra como corrigir o que não está certo.</p><p>Com <strong>Testar alarme</strong> você ouve e sente o alarme por cinco segundos, antes da primeira noite de verdade.</p></div></li></ul>
+  </div></section>
+
+  <section class="band"><div class="wrap wide band__grid">
+    <div>
+      <h2>Sem cadastro</h2>
+      <ul class="ticks"><li><strong>Sem conta, sem login.</strong> Sessões, agendamentos e configurações ficam no seu celular.</li><li><strong>Funciona offline.</strong> As verificações e o alarme não precisam de internet.</li><li><strong>As sessões sobrevivem a uma reinicialização</strong> do celular.</li><li><strong>Grátis com um pequeno banner.</strong> Sem anúncios na verificação nem no alarme. O Stay Awake Pro remove o banner – com assinatura mensal ou pagamento único.</li><li><strong>20 idiomas</strong>, do árabe ao vietnamita.</li></ul>
+      <p><a href="/stay-awake/privacy/">Ler a política de privacidade (em inglês)</a></p>
+    </div>
+    <div class="limits">
+      <h2>Limites honestos</h2>
+      <p>O Stay Awake ajuda você a ficar acordado. Ele não substitui o sono nem as pausas e não é um sistema de segurança para o trabalho ou para dirigir. Se uma verificação chega na hora, isso também depende do celular – a checagem de confiabilidade mostra o que o seu permite.</p>
+    </div>
+  </div></section>
+
+  <section><div class="wrap wide">
+    <h2>Guias para noites longas</h2>
+    <p class="lead">Úteis também sem o app: um alarme a cada 30 minutos, o turno da noite e a noite toda acordado.</p>
+    <ul class="tiles cols"><li><a href="/stay-awake/pt/guias/alarme-a-cada-30-minutos-android/"><b>Como colocar um alarme a cada 30 minutos no Android</b><em>Vários alarmes, um timer reiniciado ou um app de intervalos – três jeitos.</em></a></li><li><a href="/stay-awake/pt/guias/como-ficar-acordado-no-turno-da-noite/"><b>Como ficar acordado no trabalho à noite</b><em>Luz, movimento e um plano para as horas mortas da madrugada.</em></a></li><li><a href="/stay-awake/pt/guias/como-ficar-acordado-a-noite-toda/"><b>Como ficar acordado a noite toda</b><em>Um plano para o começo da noite, a meia-noite, as horas mortas e a manhã.</em></a></li></ul>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq"><details><summary>Qual é a diferença para um despertador comum?</summary><div class="answer"><p>Um despertador toca num horário, você estando acordado ou não. O Stay Awake pergunta primeiro e só toca alto se você não responder. Ele é feito para ficar acordado, não para acordar de manhã.</p></div></details><details><summary>Preciso deixar a tela ligada?</summary><div class="answer"><p>Não. Deixe o celular de lado, bloqueie, deixe a tela apagar. A verificação aparece sobre a tela de bloqueio. Se você escolheu agitar, basta sacudir o celular para confirmar, mesmo com a tela apagada.</p></div></details><details><summary>Qual som de alarme ele usa?</summary><div class="answer"><p>Por padrão, o som de alarme do seu próprio celular. Nas configurações você pode trocar para a melodia do Stay Awake ou escolher outro som.</p></div></details><details><summary>Funciona sem internet?</summary><div class="answer"><p>Sim. Verificações, vibração e alarme rodam inteiramente no celular.</p></div></details><details><summary>Quanto custa?</summary><div class="answer"><p>Tudo o que mantém você acordado é grátis. A versão gratuita mostra um pequeno banner nas telas normais, nunca na verificação nem no alarme. O Stay Awake Pro remove o banner, com assinatura mensal ou pagamento único; o preço aparece no Google Play.</p></div></details><details><summary>Existe versão para iPhone?</summary><div class="answer"><p>Não, o Stay Awake só está disponível para Android.</p></div></details></div>
+  </div></section>
+
+  <section class="final"><div class="wrap">
+    <h2>Se você precisa ficar acordado, este é o seu app.</h2>
+    <p class="lead">Comece uma sessão e deixe o celular de lado. O Stay Awake continua perguntando até você encerrar a sessão.</p>
+    <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=pt-BR">Disponível no Google Play</a><span class="cta__note">Grátis para Android · sem conta</span></p>
+  </div></section>
+</main>
+
+<footer class="site">
+  <div class="wrap wide foot">
+    <p><strong>Stay Awake</strong> · O alarme que pergunta se você ainda está acordado. Para Android.</p>
+    <p><a href="/stay-awake/pt/guias/">Guias</a> · <a href="/stay-awake/privacy/">Privacidade</a> · <a href="/stay-awake/imprint/" rel="nofollow">Informações legais</a> · <a href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=pt-BR">Google Play</a> · <a href="https://nicedevelopments.github.io/">Mais apps da Nice Developments</a></p>
+    <p class="fine">Nice Developments · Google Play e Android são marcas da Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
