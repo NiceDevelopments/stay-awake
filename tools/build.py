@@ -35,18 +35,40 @@ sys.path.insert(0, str(ROOT / "tools"))
 SITE = "https://nicedevelopments.github.io"
 BASE = "/stay-awake"
 PLAY_ID = "com.nicedevelopments.stayawake"
-PLAY_HL = {"de": "de", "en": "en", "es": "es", "pt": "pt-BR", "fr": "fr", "id": "id"}
+PLAY_HL = {"de": "de", "en": "en", "es": "es", "pt": "pt-BR", "fr": "fr", "id": "id",
+           "ja": "ja", "pl": "pl", "tr": "tr"}
 SHOT_W, SHOT_H = 540, 1145
 
 # es/pt/fr/id seit 24.11.2026 als Pilot: Startseite + 3 Anleitungen (Messung 22.12./05.01., Fahrplan).
 # Eine Sprache ist aktiv, sobald tools/content_<code>.py existiert.
-LOCALES = [c for c in ["en", "de", "es", "pt", "fr", "id"] if (ROOT / "tools" / f"content_{c}.py").exists()]
-C = {code: importlib.import_module(f"content_{code}").C for code in LOCALES}
+# ja/pl/tr seit 24.11.2026 (Welle 1 nach Play-Console-Zahlen): nur Startseite, Anleitungen verlinken
+# auf die englischen (siehe guides_path). Ab >= 50 Impressionen (28 T.) eigene Anleitungen.
+LOCALES = [c for c in ["en", "de", "es", "pt", "fr", "id", "ja", "pl", "tr"]
+           if (ROOT / "tools" / f"content_{c}.py").exists()]
+# Zentrale Fakten (tools/facts.py): Platzhalter {name} in allen Texten einsetzen.
+import facts as F  # noqa: E402
+
+
+def _fill(v):
+    if isinstance(v, str):
+        return F.fill(v)
+    if isinstance(v, list):
+        return [_fill(x) for x in v]
+    if isinstance(v, tuple):
+        return tuple(_fill(x) for x in v)
+    if isinstance(v, dict):
+        return {k: _fill(x) for k, x in v.items()}
+    return v
+
+
+C = {code: _fill(importlib.import_module(f"content_{code}").C) for code in LOCALES}
+# Sprachen mit eigenen Anleitungen (die anderen zeigen auf die englischen).
+GUIDED = [c for c in LOCALES if C[c]["guides"]]
 LEGAL = {
     "de": {"privacy": "/datenschutz/", "imprint": "/impressum/"},
     "en": {"privacy": "/privacy/", "imprint": "/imprint/"},
 }
-for _c in ("es", "pt", "fr", "id"):   # Rechtsseiten gibt es nur de/en; die neuen Sprachen zeigen die englischen
+for _c in ("es", "pt", "fr", "id", "ja", "pl", "tr"):   # Rechtsseiten gibt es nur de/en; die neuen Sprachen zeigen die englischen
     LEGAL[_c] = LEGAL["en"]
 
 e = html.escape
@@ -66,6 +88,8 @@ def home_path(code: str) -> str:
 
 
 def guides_path(code: str) -> str:
+    if not C[code]["guides"]:          # noch keine Anleitungen in dieser Sprache -> englische
+        code = "en"
     return home_path(code) + GUIDES_DIR[code] + "/"
 
 
@@ -237,6 +261,9 @@ LIVE = {
     "pt": ("SESSÃO EM ANDAMENTO", "até a próxima verificação", "Sem limite", "A cada 30 minutos · Tocar ou agitar", "Estou acordado", "Encerrar sessão"),
     "fr": ("SESSION EN COURS", "avant le prochain contrôle", "Illimité", "Intervalle\u00a0: 30 minutes · Toucher ou secouer", "Je suis éveillé", "Terminer la session"),
     "id": ("SESI BERJALAN", "sampai cek berikutnya", "Tanpa batas", "Setiap 30 menit · Ketuk atau guncang", "Saya terjaga", "Akhiri sesi"),
+    "ja": ("セッション実行中", "次の確認まで", "無制限", "30分 ごと · タップまたは振る", "起きています", "セッションを終了"),
+    "pl": ("SESJA TRWA", "do następnej kontroli", "Bez limitu", "Co 30 minut · Dotknięcie lub potrząśnięcie", "Nie śpię", "Zakończ sesję"),
+    "tr": ("OTURUM SÜRÜYOR", "sonraki kontrole kadar", "Sınırsız", "Aralık: 30 dakika · Dokunma veya sallama", "Uyanığım", "Oturumu bitir"),
 }
 
 
@@ -291,9 +318,12 @@ def home(code: str) -> str:
         f'<div class="why__col why__col--{i}"><h3>{e(t)}</h3><ul>'
         + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ul></div>"
         for i, (t, items) in enumerate(h["why"]))
+    gsrc = code if c["guides"] else "en"
+    cards = h.get("guide_cards") or [(g["h1"], g["teaser"]) for g in C[gsrc]["guides"]]
     guide_cards = "".join(
-        f'<li><a href="{href(guide_path(code, g))}"><b>{e(g["h1"])}</b><em>{e(g["teaser"])}</em></a></li>'
-        for g in c["guides"])
+        f'<li><a href="{href(guide_path(gsrc, g))}"{"" if gsrc == code else " hreflang=\"en\""}>'
+        f'<b>{e(title)}</b><em>{e(teaser)}</em></a></li>'
+        for g, (title, teaser) in zip(C[gsrc]["guides"], cards))
     graph = {"@context": "https://schema.org", "@graph": [app_ld(code), {
         "@type": "WebSite", "name": c["app_name"], "url": abs_url(home_path(code)), "inLanguage": code}]}
     body = f"""{header(code, alts)}
@@ -439,7 +469,7 @@ def guides_index(code: str) -> str:
     c = C[code]
     u = c["ui"]
     gi = c["guides_index"]
-    alts = {x: guides_path(x) for x in LOCALES}
+    alts = {x: guides_path(x) for x in GUIDED}
     cards = "".join(
         f'<li><a href="{href(guide_path(code, g))}"><b>{e(g["h1"])}</b><em>{e(g["teaser"])}</em></a></li>'
         for g in c["guides"])
@@ -518,8 +548,10 @@ def main() -> None:
     for code in LOCALES:
         write(home_path(code), trennen(code, home(code)))
         pages.append((home_path(code), {x: home_path(x) for x in LOCALES}))
+        if code not in GUIDED:
+            continue
         write(guides_path(code), trennen(code, guides_index(code)))
-        pages.append((guides_path(code), {x: guides_path(x) for x in LOCALES}))
+        pages.append((guides_path(code), {x: guides_path(x) for x in GUIDED}))
         for g in C[code]["guides"]:
             write(guide_path(code, g), trennen(code, guide_page(code, g)))
             pages.append((guide_path(code, g), guide_alts(g["id"])))

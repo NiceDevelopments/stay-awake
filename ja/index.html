@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay Awake：まだ起きているか確認し続けるアラーム（Android）</title>
+<meta name="description" content="夜勤や勉強中に眠らない方法を探している人へ。普通のアラームは一度鳴るだけですが、Stay Awake は30分ごと（間隔は自由）に「まだ起きていますか？」と確認し、応答があるまで鳴り続けます。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nicedevelopments.github.io/stay-awake/ja/">
+<link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/">
+<link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/">
+<link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/">
+<link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/">
+<link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/">
+<link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/">
+<link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/">
+<link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/">
+<link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/">
+<link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/">
+<meta name="color-scheme" content="dark light">
+<!-- Hintergrund sofort setzen, sonst blitzt beim Seitenwechsel kurz Weiss auf -->
+<style>html{background:#080B14;color:#E8ECF7}@media (prefers-color-scheme:light){html{background:#F3F4FA;color:#12162A}}</style>
+<meta name="theme-color" content="#E7E9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141B33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stay Awake">
+<meta property="og:title" content="Stay Awake：まだ起きているか確認し続けるアラーム（Android）">
+<meta property="og:description" content="夜勤や勉強中に眠らない方法を探している人へ。普通のアラームは一度鳴るだけですが、Stay Awake は30分ごと（間隔は自由）に「まだ起きていますか？」と確認し、応答があるまで鳴り続けます。">
+<meta property="og:url" content="https://nicedevelopments.github.io/stay-awake/ja/">
+<meta property="og:image" content="https://nicedevelopments.github.io/stay-awake/img/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="/stay-awake/img/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/stay-awake/img/icon-180.png">
+<link rel="stylesheet" href="/stay-awake/css/site.css?v=e58147ff">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "Stay Awake", "operatingSystem": "Android", "applicationCategory": "UtilitiesApplication", "description": "夜勤や勉強中に眠らない方法を探している人へ。普通のアラームは一度鳴るだけですが、Stay Awake は30分ごと（間隔は自由）に「まだ起きていますか？」と確認し、応答があるまで鳴り続けます。", "url": "https://nicedevelopments.github.io/stay-awake/ja/", "image": "https://nicedevelopments.github.io/stay-awake/img/icon-512.png", "inLanguage": "ja", "screenshot": ["https://nicedevelopments.github.io/stay-awake/img/en-session.webp", "https://nicedevelopments.github.io/stay-awake/img/en-home.webp", "https://nicedevelopments.github.io/stay-awake/img/en-check.webp", "https://nicedevelopments.github.io/stay-awake/img/en-alarm.webp", "https://nicedevelopments.github.io/stay-awake/img/en-schedules.webp", "https://nicedevelopments.github.io/stay-awake/img/en-reliability.webp", "https://nicedevelopments.github.io/stay-awake/img/en-timer.webp", "https://nicedevelopments.github.io/stay-awake/img/en-settings.webp"], "installUrl": "https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "Nice Developments"}}, {"@type": "WebSite", "name": "Stay Awake", "url": "https://nicedevelopments.github.io/stay-awake/ja/", "inLanguage": "ja"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "普通の目覚まし時計とどう違うの？", "acceptedAnswer": {"@type": "Answer", "text": "目覚まし時計は、起きていてもいなくても決まった時刻に鳴ります。Stay Awake はまずたずね、応答がないときだけ大きく鳴ります。朝起きるためではなく、起き続けるためのアプリです。"}}, {"@type": "Question", "name": "画面をつけたままにする必要はある？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。スマートフォンを置いて、ロックして、画面が消えても大丈夫です。確認はロック画面の上に表示されます。「振る」を選んでいれば、画面が消えていてもひと振りで応答できます。"}}, {"@type": "Question", "name": "どんなアラーム音が鳴るの？", "acceptedAnswer": {"@type": "Answer", "text": "初期設定では、あなたのスマートフォンのアラーム音です。設定で Stay Awake のメロディーや別の音に変えられます。"}}, {"@type": "Question", "name": "インターネットなしで使える？", "acceptedAnswer": {"@type": "Answer", "text": "はい。確認、振動、アラームはすべてスマートフォンの中で動きます。"}}, {"@type": "Question", "name": "料金は？", "acceptedAnswer": {"@type": "Answer", "text": "起きているための機能はすべて無料です。無料版は通常の画面に小さなバナーを表示しますが、確認画面とアラームには表示しません。Stay Awake Pro でバナーを消せます（月額サブスクリプションまたは買い切り）。価格は Google Play に表示されます。"}}, {"@type": "Question", "name": "iPhone 版はある？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ、Stay Awake は Android 専用です。"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site">
+  <div class="wrap wide">
+    <a class="brand" href="/stay-awake/ja/"><img src="/stay-awake/img/icon-48.png" width="30" height="30" alt="">Stay <span>Awake</span></a>
+    <nav class="site" aria-label="メインナビゲーション">
+      <a href="/stay-awake/guides/">ガイド（英語）</a>
+      <a href="/stay-awake/" hreflang="en" lang="en" title="English">EN</a><a href="/stay-awake/de/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/stay-awake/es/" hreflang="es" lang="es" title="Español">ES</a><a href="/stay-awake/pt/" hreflang="pt" lang="pt" title="Português">PT</a><a href="/stay-awake/fr/" hreflang="fr" lang="fr" title="Français">FR</a><a href="/stay-awake/id/" hreflang="id" lang="id" title="Bahasa Indonesia">ID</a><a href="/stay-awake/pl/" hreflang="pl" lang="pl" title="Polski">PL</a><a href="/stay-awake/tr/" hreflang="tr" lang="tr" title="Türkçe">TR</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap wide hero__grid">
+    <div class="hero__text">
+      <p class="kicker">起きていなければならない人のために</p>
+      <h1>アラームは一度鳴るだけ。Stay Awake は何度でも確認します。</h1>
+      <p class="lead">よくある話です。アラームが鳴り、止めて、5分後にはまた眠っている。Stay Awake は一度の合図で終わりません。30分ごと、または好きな間隔で <strong>まだ起きていますか？</strong>とたずねます。スマートフォンを振るか「はい」をタップすれば、次のラウンドが始まります。応答がなければ 10秒後に振動し、20秒後にはアラームが鳴ります。応答するまで止まりません。</p>
+      <p class="who">夜勤 · 当直 · 徹夜の勉強 · 深夜の待ち時間</p>
+      <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=ja">Google Play で手に入れよう</a><span class="cta__note">Android 向け無料 · アカウント不要</span></p>
+    </div>
+    <div class="hero__shot"><div class="halo" aria-hidden="true"></div><figure class="phone live" role="img" aria-label="セッション実行中：カウントダウン 29:50 を囲む琥珀色のリング、その下に「次の確認まで」「無制限」「30分 ごと · タップまたは振る」、ボタン「起きています」と「セッションを終了」。">
+      <div class="live__screen" aria-hidden="true">
+        <span class="live__title">セッション実行中</span>
+        <svg class="live__ring" viewBox="0 0 100 100"><circle class="live__glow" cx="50" cy="50" r="44"/><circle class="live__track" cx="50" cy="50" r="44"/><circle class="live__arc" cx="50" cy="50" r="44" stroke-dasharray="276.46" stroke-dashoffset="1.54" data-circ="276.46"/></svg>
+        <span class="live__time" data-left="1790">29:50</span>
+        <span class="live__until">次の確認まで</span>
+        <span class="live__mode">無制限</span>
+        <span class="live__every">30分 ごと · タップまたは振る</span>
+        <span class="live__btn">起きています</span>
+        <span class="live__end">セッションを終了</span>
+        <span class="live__bar"></span>
+      </div>
+    </figure>
+    <script>
+    (function () {
+      var t = document.querySelector(".live__time"), arc = document.querySelector(".live__arc");
+      if (!t || !arc) return;
+      var full = 1800, left = +t.dataset.left, circ = +arc.dataset.circ;
+      function show() {
+        var m = Math.floor(left / 60), s = left % 60;
+        t.textContent = m + ":" + (s < 10 ? "0" : "") + s;
+        arc.style.strokeDashoffset = (circ * (full - left) / full).toFixed(2);
+      }
+      setInterval(function () { left = left > 0 ? left - 1 : full; show(); }, 1000);
+    })();
+    </script></div>
+  </div></section>
+
+  <section class="why"><div class="wrap wide">
+    <h2>普通のアラームでは足りない理由</h2>
+    <p class="lead">アラームは一度起こすためのもの。起きていることは、何時間も持ちこたえること。難しいのは、誰もあなたが起きているか確かめていない時間です。</p>
+    <div class="why__grid"><div class="why__col why__col--0"><h3>普通のアラーム</h3><ul><li>前もって決めた時刻に一度だけ鳴る。</li><li>寝ぼけたまま止めたら、それで終わり。</li><li>まだ起きているかは一度も聞かない。</li></ul></div><div class="why__col why__col--1"><h3>Stay Awake</h3><ul><li>一晩中、何度でもたずねる。間隔は1分から12時間まで自由。</li><li>まずは静かに確認。応答がないときだけ振動し、それから鳴る。</li><li>アラームは応答するまで鳴り続け、そのあと次のラウンドが始まる。</li></ul></div></div>
+  </div></section>
+
+  <section class="steps-band"><div class="wrap wide">
+    <h2>確認の時間になると起きること</h2>
+    <p class="lead">最初はやさしく、必要なときだけ大きく。応答した瞬間に、どの段階も止まります。</p>
+    <ol class="esc"><li class="esc__step esc__step--0"><span class="esc__t">0秒</span><b>問いかけ</b><span class="esc__d">画面が点灯し（ロック画面の上にも）、たずねます：まだ起きていますか？</span></li><li class="esc__step esc__step--1"><span class="esc__t">10秒</span><b>振動</b><span class="esc__d">まだ応答がない？ スマートフォンが振動し始めます。</span></li><li class="esc__step esc__step--2"><span class="esc__t">20秒</span><b>アラーム</b><span class="esc__d">それでも応答がなければ、スマートフォンのアラーム音で本物のアラームが鳴ります。</span></li><li class="esc__step esc__step--3"><span class="esc__t">はい</span><b>次のラウンド</b><span class="esc__d">タップかひと振りで、すべて止まり、また最初から間隔のカウントが始まります。</span></li></ol>
+  </div></section>
+
+  <section class="features"><div class="wrap wide">
+    <h2>開始する、応答する、予定を組む、確かめる</h2>
+    <ul class="feature-grid"><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-home.webp" width="230" height="487" alt="ホーム画面：無制限かタイマーか、30分に合わせた丸いダイヤル、そして「セッションを開始」ボタン（英語版アプリの画面）。" decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">開始</p><h3>決めることは二つ、ボタンは一つ</h3><p><strong>無制限</strong>か<strong>タイマー</strong>か、そしてどのくらいの間隔でたずねるか。ダイヤルを回して1分から12時間まで、最初は30分です。前回の選択はアプリが覚えています。</p><p>タイマーは決まった長さ（「2時間」）か、決まった時刻まで（「5:30まで」）。</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-check.webp" width="230" height="487" alt="確認画面：「まだ起きていますか？」、その下に「またはスマートフォンを振る」、進行バー、大きな「はい」ボタン、さらに下に「セッションを終了」（英語版アプリの画面）。" decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">応答</p><h3>タップ、振る、裏返す：選ぶのはあなた</h3><p>大きな <strong>はい</strong> ボタンはいつでも使えます。設定で、スマートフォンを振る、裏返す、音量ボタンを自由に組み合わせて追加できます。「振る」と「裏返す」は画面が消えていても使えます。</p><p>問いかけを待つ必要はありません。いつでも応答でき、その瞬間から間隔が新しく始まります。</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-schedules.webp" width="230" height="487" alt="スケジュール：22:00〜6:00、月曜〜金曜、30分ごと、オン（英語版アプリの画面）。" decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">シフト</p><h3>自動で始まるスケジュール</h3><p>繰り返しの夜のために：開始と終了の時刻、必要なら曜日、そして間隔。セッションは決めた時刻に自動で始まり、終了時刻に終わります。</p><p>曜日を選ばなければ、スケジュールは次の開始時刻に一度だけ実行されます。</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-reliability.webp" width="230" height="487" alt="信頼性チェック：「準備完了」、通知からバッテリーまで9項目がすべて緑（英語版アプリの画面）。" decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">信頼性</p><h3>スマートフォンが何を許しているかを把握</h3><p>Android スマートフォンは、省電力、サイレントモード、足りない権限などでアラームを遅らせたり止めたりすることがあります。<strong>信頼性</strong>チェックは一つずつわかりやすい言葉で確認し、うまくいかない項目の直し方を示します。</p><p><strong>アラームをテスト</strong>で、本番の夜の前にアラームの音と振動を5秒間確かめられます。</p></div></li></ul>
+  </div></section>
+
+  <section class="band"><div class="wrap wide band__grid">
+    <div>
+      <h2>登録不要</h2>
+      <ul class="ticks"><li><strong>アカウントもログインも不要。</strong>セッション、スケジュール、設定はスマートフォンの中だけに残ります。</li><li><strong>オフラインで動作。</strong>確認もアラームもインターネットを使いません。</li><li><strong>セッションは再起動後も続きます。</strong></li><li><strong>無料、小さなバナー付き。</strong>確認画面とアラームには広告なし。Stay Awake Pro でバナーを消せます（月額サブスクリプションまたは買い切り）。</li><li><strong>20言語に対応</strong>、アラビア語からベトナム語まで。</li></ul>
+      <p><a href="/stay-awake/privacy/">プライバシーポリシーを読む（英語）</a></p>
+    </div>
+    <div class="limits">
+      <h2>正直な限界</h2>
+      <p>Stay Awake は起きているための手助けです。睡眠や休憩の代わりにはならず、仕事や運転のための安全システムでもありません。確認が時間どおりに届くかどうかはスマートフォンにも左右されます。信頼性チェックで、あなたの端末が何を許しているかがわかります。</p>
+    </div>
+  </div></section>
+
+  <section><div class="wrap wide">
+    <h2>長い夜のためのガイド（英語）</h2>
+    <p class="lead">アプリがなくても役立ちます：夜勤、徹夜の勉強、コーヒーなしで起きている方法、間隔アラーム。今は英語版のみです。</p>
+    <ul class="tiles cols"><li><a href="/stay-awake/guides/how-to-stay-awake-on-night-shift/" hreflang="en"><b>夜勤で眠らない方法</b><em>光、体を動かすこと、そして午前3時前後の一番つらい時間のための作戦。</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-while-studying/" hreflang="en"><b>夜の勉強中に眠らない方法</b><em>短い区切り、手を動かす勉強、そして確認してくれるタイマー。</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-all-night/" hreflang="en"><b>一晩中起きている方法</b><em>夜、深夜、一番つらい時間、そして朝のための計画。</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-without-caffeine/" hreflang="en"><b>カフェインなしで眠らない方法</b><em>コーヒーの代わりに、光、冷たさ、体の動き、リズム。</em></a></li><li><a href="/stay-awake/guides/alarm-every-30-minutes-android/" hreflang="en"><b>Android で30分ごとにアラームを鳴らす方法</b><em>複数のアラーム、タイマーのかけ直し、間隔アラーム ― 三つのやり方。</em></a></li><li><a href="/stay-awake/guides/alarm-that-checks-if-you-are-awake/" hreflang="en"><b>まだ起きているか確認するアラーム</b><em>まずたずね、必要なときだけ大きく鳴らす ― 起床確認の考え方。</em></a></li><li><a href="/stay-awake/guides/android-alarm-not-going-off/" hreflang="en"><b>Android のアラームが鳴らない？ 7つの原因と対策</b><em>音量、サイレントモード、省電力、権限 ― 確認すべきこと。</em></a></li><li><a href="/stay-awake/guides/interval-alarm-android/" hreflang="en"><b>Android の間隔アラーム：10分・15分ごと、または1時間ごと</b><em>1時間ごとは時計アプリで、もっと短い間隔はタイマーかアプリで。</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-after-alarm/" hreflang="en"><b>アラームが鳴ったあと起きていられる方法</b><em>アラームだけでは足りない理由と、最初の10分を乗り切るコツ。</em></a></li></ul>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>よくある質問</h2>
+    <div class="faq"><details><summary>普通の目覚まし時計とどう違うの？</summary><div class="answer"><p>目覚まし時計は、起きていてもいなくても決まった時刻に鳴ります。Stay Awake はまずたずね、応答がないときだけ大きく鳴ります。朝起きるためではなく、起き続けるためのアプリです。</p></div></details><details><summary>画面をつけたままにする必要はある？</summary><div class="answer"><p>いいえ。スマートフォンを置いて、ロックして、画面が消えても大丈夫です。確認はロック画面の上に表示されます。「振る」を選んでいれば、画面が消えていてもひと振りで応答できます。</p></div></details><details><summary>どんなアラーム音が鳴るの？</summary><div class="answer"><p>初期設定では、あなたのスマートフォンのアラーム音です。設定で Stay Awake のメロディーや別の音に変えられます。</p></div></details><details><summary>インターネットなしで使える？</summary><div class="answer"><p>はい。確認、振動、アラームはすべてスマートフォンの中で動きます。</p></div></details><details><summary>料金は？</summary><div class="answer"><p>起きているための機能はすべて無料です。無料版は通常の画面に小さなバナーを表示しますが、確認画面とアラームには表示しません。Stay Awake Pro でバナーを消せます（月額サブスクリプションまたは買い切り）。価格は Google Play に表示されます。</p></div></details><details><summary>iPhone 版はある？</summary><div class="answer"><p>いいえ、Stay Awake は Android 専用です。</p></div></details></div>
+  </div></section>
+
+  <section class="final"><div class="wrap">
+    <h2>起きていなければならない夜に。</h2>
+    <p class="lead">セッションを開始して、スマートフォンを脇に置くだけ。セッションを終了するまで、Stay Awake はたずね続けます。</p>
+    <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=ja">Google Play で手に入れよう</a><span class="cta__note">Android 向け無料 · アカウント不要</span></p>
+  </div></section>
+</main>
+
+<footer class="site">
+  <div class="wrap wide foot">
+    <p><strong>Stay Awake</strong> · まだ起きているか確かめるアラーム。Android 用。</p>
+    <p><a href="/stay-awake/guides/">ガイド（英語）</a> · <a href="/stay-awake/privacy/">プライバシー（英語）</a> · <a href="/stay-awake/imprint/" rel="nofollow">運営者情報（英語）</a> · <a href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=ja">Google Play</a> · <a href="https://nicedevelopments.github.io/">Nice Developments のほかのアプリ</a></p>
+    <p class="fine">Nice Developments · Google Play および Android は Google LLC の商標です。</p>
+  </div>
+</footer>
+</body>
+</html>

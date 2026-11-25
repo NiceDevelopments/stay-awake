@@ -8,6 +8,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -93,6 +96,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -173,6 +179,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -223,6 +232,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -273,6 +285,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -323,6 +338,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
   <url>
@@ -364,5 +382,44 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/guides/rester-eveille-toute-une-nuit/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/panduan/cara-begadang-sampai-pagi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/guides/how-to-stay-awake-all-night/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
+  </url>
+  <url>
+    <loc>https://nicedevelopments.github.io/stay-awake/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/"/>
   </url>
 </urlset>

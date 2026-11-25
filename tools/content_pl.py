@@ -1,0 +1,131 @@
+"""Polski (Welle 1, 24.11.2026). Fakty tylko z aplikacji (zob. docstring build.py).
+
+Wyszukiwania (podpowiedzi Google, 24.11.2026): „jak nie zasnąć” (w nocy, w pracy, na nocnej
+zmianie, na wykładzie), „jak nie zasnąć w pracy na nocce”, „budzik 30 minut”, „budzik co godzinę”,
+„jak ustawić budzik co godzinę”.
+
+Nazwy z aplikacji jak w app/src/main/res/values-pl: Bez limitu, Minutnik, Rozpocznij sesję,
+Nadal nie śpisz?, Tak, Zakończ sesję, Harmonogramy, Niezawodność, Przetestuj alarm, Ustawienia.
+Zrzuty ekranu pokazują aplikację po angielsku (polskich jeszcze nie ma).
+Zakazane: prowadzenie auta (poza zdaniem o granicach, jak w karcie Google Play), obietnice BHP,
+„zapobiega zaśnięciu”, porady medyczne.
+"""
+
+APP = "Stay Awake"
+NOTE_EN = " (zrzut z angielskiej wersji aplikacji)"
+
+C = {
+    "app_name": APP,
+    "lang_name": "Polski",
+    "og_locale": "pl_PL",
+    "ui": {
+        "skip": "Przejdź do treści",
+        "nav": "Nawigacja główna",
+        "guides": "Poradniki (ang.)",
+        "privacy": "Prywatność (ang.)",
+        "imprint": "Nota prawna (ang.)",
+        "faq": "Najczęstsze pytania",
+        "toc": "Na tej stronie",
+        "crumbs": "Ścieżka nawigacji",
+        "updated": "Aktualizacja:",
+        "with_app": "Z aplikacją",
+        "more_guides": "Więcej poradników",
+        "play_cta": "Pobierz z Google Play",
+        "play_note": "Za darmo na Androida · bez konta",
+        "moreapps": "Więcej aplikacji Nice Developments",
+        "footer_tag": "Budzik, który pyta, czy nadal nie śpisz. Na Androida.",
+        "trademark": "Google Play i Android są znakami towarowymi Google LLC.",
+    },
+
+    "home": {
+        "title": "Stay Awake: budzik, który pyta, czy nadal nie śpisz",
+        "desc": "Jak nie zasnąć w nocy? Zwykły budzik dzwoni raz. Stay Awake co 30 minut pyta, czy nadal nie śpisz – i dzwoni, dopóki nie odpowiesz.",
+        "kicker": "Dla tych, którzy muszą nie spać",
+        "h1": "Budzik dzwoni raz. Stay Awake pyta dalej.",
+        "lead": "Znasz to: budzik dzwoni, wyłączasz go i pięć minut później znowu śpisz. Stay Awake nie kończy na jednym sygnale. Co {interval_default} minut, albo w wybranym przez ciebie odstępie, pyta: **Nadal nie śpisz?** Potrząśnij telefonem albo dotknij Tak – i zaczyna się następna runda. Brak odpowiedzi? Po {vibrate_s} sekundach telefon wibruje, po {alarm_s} dzwoni alarm – aż odpowiesz.",
+        "who": "Nocne zmiany · dyżury · nocna nauka · czekanie w środku nocy",
+        "why_h2": "Dlaczego zwykły budzik nie wystarcza",
+        "why_lead": "Budzik ma cię obudzić raz. Nie spać to wytrwać godzinę po godzinie – a najtrudniejszy jest moment, w którym nikt nie sprawdza, czy jeszcze jesteś przytomny.",
+        "why": [["Zwykły budzik", ["Dzwoni raz, o godzinie ustawionej wcześniej.", "Wyłączasz go w półśnie i nic więcej się nie dzieje.", "Nigdy nie pyta, czy nadal nie śpisz."]], ["Stay Awake", ["Pyta raz za razem, przez całą noc, w wybranym odstępie: od {interval_min} minuty do {interval_max_h} godzin.", "Najpierw pyta po cichu. Wibruje i dzwoni dopiero, gdy nie odpowiadasz.", "Alarm dzwoni, dopóki nie odpowiesz. Potem zaczyna się następna runda."]]],
+        "hero_shot": "en-session.webp",
+        "shots": {
+            "en-session.webp": "Trwająca sesja: bursztynowy pierścień wokół odliczania 29:50, pod nim „do następnej kontroli”, „Bez limitu”, „Co 30 minut · Dotknięcie lub potrząśnięcie”, przycisk „Nie śpię” i „Zakończ sesję”.",
+            "en-home.webp": "Ekran startowy: Bez limitu albo Minutnik, okrągłe pokrętło ustawione na 30 minut i przycisk Rozpocznij sesję" + NOTE_EN + ".",
+            "en-check.webp": "Kontrola: „Nadal nie śpisz?”, pod spodem „lub potrząśnij telefonem”, pasek postępu, duży przycisk Tak, a niżej Zakończ sesję" + NOTE_EN + ".",
+            "en-alarm.webp": "Po 20 sekundach bez odpowiedzi: ta sama kontrola, teraz z „Pominięta kontrola” i czerwoną linią; dzwoni alarm" + NOTE_EN + ".",
+            "en-schedules.webp": "Harmonogramy: od 22:00 do 6:00, od poniedziałku do piątku, co 30 minut, włączone" + NOTE_EN + ".",
+            "en-reliability.webp": "Sprawdzenie niezawodności: „Gotowe” i dziewięć zielonych punktów, od powiadomień po baterię" + NOTE_EN + ".",
+            "en-timer.webp": "Tryb Minutnik: przez 2 godziny, kontrola co 30 minut" + NOTE_EN + ".",
+            "en-settings.webp": "Ustawienia: dotknięcie Tak działa zawsze; do tego potrząśnięcie, odwrócenie telefonu albo przycisk głośności" + NOTE_EN + ".",
+        },
+        "steps_h2": "Co się dzieje, gdy przychodzi czas na kontrolę",
+        "steps_lead": "Najpierw łagodnie, głośno tylko wtedy, gdy trzeba. Każdy krok kończy się w chwili, gdy odpowiesz.",
+        "steps": [
+            ["0 s", "Pytanie", "Ekran się włącza, także na ekranie blokady, i pyta: Nadal nie śpisz?"],
+            ["{vibrate_s} s", "Wibracje", "Nadal brak odpowiedzi? Telefon zaczyna wibrować."],
+            ["{alarm_s} s", "Alarm", "Wciąż nic: prawdziwy alarm z dźwiękiem budzika twojego telefonu."],
+            ["Tak", "Następna runda", "Dotknięcie albo potrząśnięcie – wszystko cichnie i cały odstęp zaczyna się od nowa."],
+        ],
+        "features_h2": "Rozpocznij, potwierdź, zaplanuj, sprawdź",
+        "features": [
+            {"kicker": "Start", "h2": "Dwie decyzje, jeden przycisk",
+             "body": ["**Bez limitu** albo **Minutnik** – i jak często aplikacja ma pytać. Przekręć pokrętło: od {interval_min} minuty do {interval_max_h} godzin, na początek {interval_default} minut. Aplikacja pamięta twój ostatni wybór.",
+                      "Minutnik działa przez określony czas („przez 2 godziny”) albo do konkretnej godziny („do 5:30”)."],
+             "shot": "en-home.webp"},
+            {"kicker": "Potwierdzenie", "h2": "Dotknij, potrząśnij, odwróć – ty wybierasz",
+             "body": ["Duży przycisk **Tak** działa zawsze. W ustawieniach możesz dodać potrząśnięcie, odwrócenie telefonu albo przycisk głośności, w dowolnym połączeniu. Potrząśnięcie i odwrócenie działają też przy wygaszonym ekranie.",
+                      "Nie musisz czekać na pytanie: potwierdź, kiedy chcesz, a odstęp zacznie się od tej chwili."],
+             "shot": "en-check.webp"},
+            {"kicker": "Zmiany", "h2": "Harmonogramy, które startują same",
+             "body": ["Na powtarzające się noce: godzina początku i końca, opcjonalnie dni tygodnia, odstęp. Sesja zaczyna się sama o ustalonej godzinie i kończy o godzinie końca.",
+                      "Jeśli nie wybierzesz żadnego dnia, harmonogram uruchomi się tylko raz – przy najbliższym starcie."],
+             "shot": "en-schedules.webp"},
+            {"kicker": "Niezawodność", "h2": "Wie, na co pozwala twój telefon",
+             "body": ["Telefony z Androidem potrafią opóźniać albo blokować alarmy: oszczędzanie baterii, tryb Nie przeszkadzać, brakujące uprawnienia. Ekran **Niezawodność** omawia każdy punkt prostym językiem i pokazuje, jak naprawić to, co nie działa.",
+                      "Po dotknięciu **Przetestuj alarm** usłyszysz i poczujesz alarm przez {test_alarm_s} sekund, jeszcze przed pierwszą prawdziwą nocą."],
+             "shot": "en-reliability.webp"},
+        ],
+        "limits_h2": "Uczciwe granice",
+        "limits": "Stay Awake pomaga nie spać. Nie zastępuje snu ani przerw i nie jest systemem bezpieczeństwa w pracy ani podczas jazdy samochodem. To, czy kontrola przyjdzie na czas, zależy też od telefonu: sprawdzenie niezawodności pokazuje, na co pozwala twój.",
+        "nots_h2": "Bez rejestracji",
+        "nots": [
+            "**Bez konta, bez logowania.** Sesje, harmonogramy i ustawienia zostają w twoim telefonie.",
+            "**Działa offline.** Kontrole i alarm nie potrzebują internetu.",
+            "**Sesje przetrwają restart** telefonu.",
+            "**Za darmo, z małym banerem.** Żadnych reklam w kontroli ani przy alarmie. Stay Awake Pro usuwa baner – w miesięcznej subskrypcji albo jednorazowym zakupem.",
+            "**{languages} języków**, od arabskiego po wietnamski.",
+        ],
+        "privacy_link": "Przeczytaj politykę prywatności (po angielsku)",
+        "guides_h2": "Poradniki na długie noce (po angielsku)",
+        "guides_lead": "Przydatne także bez aplikacji: nocne zmiany, nocna nauka, jak nie zasnąć bez kawy, budzik co określony czas. Na razie tylko po angielsku.",
+        "guide_cards": [
+            ("Jak nie zasnąć na nocnej zmianie", "Światło, ruch i plan na najgorsze godziny około trzeciej w nocy."),
+            ("Jak nie zasnąć przy nocnej nauce", "Krótkie bloki, aktywna nauka i minutnik, który sprawdza, czy nie śpisz."),
+            ("Jak nie spać całą noc", "Plan na wieczór, północ, najcięższe godziny i poranek."),
+            ("Jak nie zasnąć bez kofeiny", "Światło, chłód, ruch i rytm zamiast kawy."),
+            ("Jak ustawić budzik co 30 minut na Androidzie", "Kilka budzików, minutnik ustawiany od nowa albo budzik interwałowy – trzy sposoby."),
+            ("Budzik, który sprawdza, czy nadal nie śpisz", "Najpierw zapytać, głośno tylko w razie potrzeby – idea kontroli czuwania."),
+            ("Budzik na Androidzie nie dzwoni? 7 przyczyn i rozwiązań", "Głośność, Nie przeszkadzać, oszczędzanie baterii, uprawnienia – co sprawdzić."),
+            ("Budzik interwałowy na Androidzie: co 10, 15 minut albo co godzinę", "Co godzinę aplikacją Zegar, krótsze odstępy minutnikiem albo aplikacją."),
+            ("Jak nie zasnąć po dzwonku budzika", "Dlaczego sam budzik nie wystarcza i jak przetrwać pierwsze dziesięć minut."),
+        ],
+        "faq": [
+            ["Czym to się różni od zwykłego budzika?",
+             ["Budzik dzwoni o ustalonej godzinie, czy śpisz, czy nie. Stay Awake najpierw pyta i dzwoni głośno dopiero wtedy, gdy nie odpowiadasz. Służy do tego, żeby nie spać – nie do porannego wstawania."]],
+            ["Czy ekran musi być cały czas włączony?",
+             ["Nie. Odłóż telefon, zablokuj go, pozwól ekranowi zgasnąć. Kontrola pojawia się na ekranie blokady. Jeśli wybrano potrząśnięcie, jedno potrząśnięcie potwierdza nawet przy wygaszonym ekranie."]],
+            ["Jakiego dźwięku używa alarm?",
+             ["Domyślnie dźwięku budzika z twojego telefonu. W ustawieniach możesz przełączyć na melodię Stay Awake albo wybrać inny dźwięk."]],
+            ["Czy działa bez internetu?",
+             ["Tak. Kontrole, wibracje i alarm działają w całości w telefonie."]],
+            ["Ile to kosztuje?",
+             ["Wszystko, co pomaga nie spać, jest za darmo. Wersja darmowa pokazuje mały baner na zwykłych ekranach, nigdy w kontroli ani przy alarmie. Stay Awake Pro go usuwa – w miesięcznej subskrypcji albo jednorazowym zakupem; cenę zobaczysz w Google Play."]],
+            ["Czy jest wersja na iPhone'a?",
+             ["Nie, Stay Awake jest dostępny tylko na Androida."]],
+        ],
+        "final_h2": "Jeśli musisz nie spać, to aplikacja dla ciebie.",
+        "final_body": "Rozpocznij sesję i odłóż telefon. Stay Awake pyta dalej, dopóki nie zakończysz sesji.",
+    },
+
+    "guides": [],
+}

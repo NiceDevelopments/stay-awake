@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay Awake: hâlâ uyanık mısın diye soran alarm (Android)</title>
+<meta name="description" content="Gece uyanık kalmak mı gerekiyor? Alarm bir kez çalar; Stay Awake her 30 dakikada bir uyanık mısın diye sorar ve cevap verene kadar çalar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nicedevelopments.github.io/stay-awake/tr/">
+<link rel="alternate" hreflang="en" href="https://nicedevelopments.github.io/stay-awake/">
+<link rel="alternate" hreflang="de" href="https://nicedevelopments.github.io/stay-awake/de/">
+<link rel="alternate" hreflang="es" href="https://nicedevelopments.github.io/stay-awake/es/">
+<link rel="alternate" hreflang="pt" href="https://nicedevelopments.github.io/stay-awake/pt/">
+<link rel="alternate" hreflang="fr" href="https://nicedevelopments.github.io/stay-awake/fr/">
+<link rel="alternate" hreflang="id" href="https://nicedevelopments.github.io/stay-awake/id/">
+<link rel="alternate" hreflang="ja" href="https://nicedevelopments.github.io/stay-awake/ja/">
+<link rel="alternate" hreflang="pl" href="https://nicedevelopments.github.io/stay-awake/pl/">
+<link rel="alternate" hreflang="tr" href="https://nicedevelopments.github.io/stay-awake/tr/">
+<link rel="alternate" hreflang="x-default" href="https://nicedevelopments.github.io/stay-awake/">
+<meta name="color-scheme" content="dark light">
+<!-- Hintergrund sofort setzen, sonst blitzt beim Seitenwechsel kurz Weiss auf -->
+<style>html{background:#080B14;color:#E8ECF7}@media (prefers-color-scheme:light){html{background:#F3F4FA;color:#12162A}}</style>
+<meta name="theme-color" content="#E7E9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141B33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stay Awake">
+<meta property="og:title" content="Stay Awake: hâlâ uyanık mısın diye soran alarm (Android)">
+<meta property="og:description" content="Gece uyanık kalmak mı gerekiyor? Alarm bir kez çalar; Stay Awake her 30 dakikada bir uyanık mısın diye sorar ve cevap verene kadar çalar.">
+<meta property="og:url" content="https://nicedevelopments.github.io/stay-awake/tr/">
+<meta property="og:image" content="https://nicedevelopments.github.io/stay-awake/img/icon-512.png">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="/stay-awake/img/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/stay-awake/img/icon-180.png">
+<link rel="stylesheet" href="/stay-awake/css/site.css?v=e58147ff">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "Stay Awake", "operatingSystem": "Android", "applicationCategory": "UtilitiesApplication", "description": "Gece uyanık kalmak mı gerekiyor? Alarm bir kez çalar; Stay Awake her 30 dakikada bir uyanık mısın diye sorar ve cevap verene kadar çalar.", "url": "https://nicedevelopments.github.io/stay-awake/tr/", "image": "https://nicedevelopments.github.io/stay-awake/img/icon-512.png", "inLanguage": "tr", "screenshot": ["https://nicedevelopments.github.io/stay-awake/img/en-session.webp", "https://nicedevelopments.github.io/stay-awake/img/en-home.webp", "https://nicedevelopments.github.io/stay-awake/img/en-check.webp", "https://nicedevelopments.github.io/stay-awake/img/en-alarm.webp", "https://nicedevelopments.github.io/stay-awake/img/en-schedules.webp", "https://nicedevelopments.github.io/stay-awake/img/en-reliability.webp", "https://nicedevelopments.github.io/stay-awake/img/en-timer.webp", "https://nicedevelopments.github.io/stay-awake/img/en-settings.webp"], "installUrl": "https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "Nice Developments"}}, {"@type": "WebSite", "name": "Stay Awake", "url": "https://nicedevelopments.github.io/stay-awake/tr/", "inLanguage": "tr"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Normal bir çalar saatten farkı ne?", "acceptedAnswer": {"@type": "Answer", "text": "Çalar saat, uyanık olsan da olmasan da belirli bir saatte çalar. Stay Awake önce sorar ve ancak cevap vermezsen yüksek sesle çalar. Sabah uyanmak için değil, uyanık kalmak için yapılmıştır."}}, {"@type": "Question", "name": "Ekranı açık tutmam gerekiyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Telefonu bir kenara koy, kilitle, ekranın kapanmasına izin ver. Kontrol kilit ekranının üzerinde görünür. Sallamayı seçtiysen, ekran kapalıyken bile bir sallama onaylar."}}, {"@type": "Question", "name": "Alarm hangi sesi kullanıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Varsayılan olarak telefonunun kendi alarm sesini. Ayarlardan Stay Awake melodisine geçebilir ya da başka bir ses seçebilirsin."}}, {"@type": "Question", "name": "İnternet olmadan çalışır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Kontroller, titreşim ve alarm tamamen telefonda çalışır."}}, {"@type": "Question", "name": "Ücreti ne kadar?", "acceptedAnswer": {"@type": "Answer", "text": "Uyanık kalmanı sağlayan her şey ücretsiz. Ücretsiz sürüm normal ekranlarda küçük bir banner gösterir, kontrolde ve alarmda asla. Stay Awake Pro onu kaldırır – aylık abonelikle ya da tek seferlik satın almayla; fiyatı Google Play’de görürsün."}}, {"@type": "Question", "name": "iPhone sürümü var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, Stay Awake yalnızca Android için var."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site">
+  <div class="wrap wide">
+    <a class="brand" href="/stay-awake/tr/"><img src="/stay-awake/img/icon-48.png" width="30" height="30" alt="">Stay <span>Awake</span></a>
+    <nav class="site" aria-label="Ana gezinme">
+      <a href="/stay-awake/guides/">Rehberler (İngilizce)</a>
+      <a href="/stay-awake/" hreflang="en" lang="en" title="English">EN</a><a href="/stay-awake/de/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/stay-awake/es/" hreflang="es" lang="es" title="Español">ES</a><a href="/stay-awake/pt/" hreflang="pt" lang="pt" title="Português">PT</a><a href="/stay-awake/fr/" hreflang="fr" lang="fr" title="Français">FR</a><a href="/stay-awake/id/" hreflang="id" lang="id" title="Bahasa Indonesia">ID</a><a href="/stay-awake/ja/" hreflang="ja" lang="ja" title="日本語">JA</a><a href="/stay-awake/pl/" hreflang="pl" lang="pl" title="Polski">PL</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap wide hero__grid">
+    <div class="hero__text">
+      <p class="kicker">Uyanık kalması gerekenler için</p>
+      <h1>Alarm bir kez çalar. Stay Awake sormaya devam eder.</h1>
+      <p class="lead">Tanıdık geliyor mu: alarm çalar, kapatırsın ve beş dakika sonra yine uyumuşsundur. Stay Awake tek bir uyarıyla yetinmez. Her 30 dakikada bir, ya da seçtiğin aralıkla, sorar: <strong>Hâlâ uyanık mısın?</strong> Telefonu salla ya da Evet’e dokun, bir sonraki tur başlasın. Cevap yok mu? 10 saniye sonra titrer, 20 saniye sonra alarm çalar – sen cevap verene kadar.</p>
+      <p class="who">Gece vardiyası · nöbet · gece ders çalışma · gecenin ortasında beklemek</p>
+      <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=tr">Google Play’den alın</a><span class="cta__note">Android için ücretsiz · hesap gerekmez</span></p>
+    </div>
+    <div class="hero__shot"><div class="halo" aria-hidden="true"></div><figure class="phone live" role="img" aria-label="Süren oturum: 29:50 geri sayımının çevresinde kehribar renkli bir halka, altında „sonraki kontrole kadar”, „Sınırsız”, „Aralık: 30 dakika · Dokunma veya sallama”, „Uyanığım” düğmesi ve „Oturumu bitir”.">
+      <div class="live__screen" aria-hidden="true">
+        <span class="live__title">OTURUM SÜRÜYOR</span>
+        <svg class="live__ring" viewBox="0 0 100 100"><circle class="live__glow" cx="50" cy="50" r="44"/><circle class="live__track" cx="50" cy="50" r="44"/><circle class="live__arc" cx="50" cy="50" r="44" stroke-dasharray="276.46" stroke-dashoffset="1.54" data-circ="276.46"/></svg>
+        <span class="live__time" data-left="1790">29:50</span>
+        <span class="live__until">sonraki kontrole kadar</span>
+        <span class="live__mode">Sınırsız</span>
+        <span class="live__every">Aralık: 30 dakika · Dokunma veya sallama</span>
+        <span class="live__btn">Uyanığım</span>
+        <span class="live__end">Oturumu bitir</span>
+        <span class="live__bar"></span>
+      </div>
+    </figure>
+    <script>
+    (function () {
+      var t = document.querySelector(".live__time"), arc = document.querySelector(".live__arc");
+      if (!t || !arc) return;
+      var full = 1800, left = +t.dataset.left, circ = +arc.dataset.circ;
+      function show() {
+        var m = Math.floor(left / 60), s = left % 60;
+        t.textContent = m + ":" + (s < 10 ? "0" : "") + s;
+        arc.style.strokeDashoffset = (circ * (full - left) / full).toFixed(2);
+      }
+      setInterval(function () { left = left > 0 ? left - 1 : full; show(); }, 1000);
+    })();
+    </script></div>
+  </div></section>
+
+  <section class="why"><div class="wrap wide">
+    <h2>Normal bir alarm neden yetmez</h2>
+    <p class="lead">Alarm seni bir kez uyandırmak için yapılmıştır. Uyanık kalmak ise saatlerce dayanmak demektir; en zor an, kimsenin hâlâ orada olup olmadığını kontrol etmediği andır.</p>
+    <div class="why__grid"><div class="why__col why__col--0"><h3>Normal alarm</h3><ul><li>Önceden ayarladığın saatte bir kez çalar.</li><li>Yarı uykulu kapatırsın, sonra başka bir şey olmaz.</li><li>Hâlâ uyanık olup olmadığını hiç sormaz.</li></ul></div><div class="why__col why__col--1"><h3>Stay Awake</h3><ul><li>Bütün gece tekrar tekrar sorar, seçtiğin aralıkla: 1 dakikadan 12 saate kadar.</li><li>Önce sessizce sorar. Ancak cevap vermezsen titrer, sonra çalar.</li><li>Alarm sen cevap verene kadar çalar. Ardından bir sonraki tur başlar.</li></ul></div></div>
+  </div></section>
+
+  <section class="steps-band"><div class="wrap wide">
+    <h2>Kontrol zamanı gelince ne olur</h2>
+    <p class="lead">Önce yumuşak, ancak gerekirse yüksek sesle. Cevap verdiğin anda her adım durur.</p>
+    <ol class="esc"><li class="esc__step esc__step--0"><span class="esc__t">0 sn</span><b>Soru</b><span class="esc__d">Ekran açılır – kilit ekranının üzerinde de – ve sorar: Hâlâ uyanık mısın?</span></li><li class="esc__step esc__step--1"><span class="esc__t">10 sn</span><b>Titreşim</b><span class="esc__d">Hâlâ cevap yok mu? Telefon titremeye başlar.</span></li><li class="esc__step esc__step--2"><span class="esc__t">20 sn</span><b>Alarm</b><span class="esc__d">Yine cevap yoksa: telefonunun alarm sesiyle gerçek bir alarm.</span></li><li class="esc__step esc__step--3"><span class="esc__t">Evet</span><b>Sonraki tur</b><span class="esc__d">Bir dokunuş ya da bir sallama: her şey durur ve aralık baştan başlar.</span></li></ol>
+  </div></section>
+
+  <section class="features"><div class="wrap wide">
+    <h2>Başlat, onayla, planla, kontrol et</h2>
+    <ul class="feature-grid"><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-home.webp" width="230" height="487" alt="Ana ekran: Sınırsız ya da Zamanlayıcı, 30 dakikaya ayarlı yuvarlak bir kadran ve Oturumu başlat düğmesi (uygulamanın İngilizce sürümünden ekran görüntüsü)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Başlat</p><h3>İki karar, bir düğme</h3><p><strong>Sınırsız</strong> ya da <strong>Zamanlayıcı</strong>, bir de ne sıklıkla sorulacağı. Kadranı çevir: 1 dakikadan 12 saate kadar, başlangıçta 30 dakika. Uygulama son seçimini hatırlar.</p><p>Zamanlayıcı belirli bir süre („2 saat boyunca”) ya da belirli bir saate kadar („5:30’a kadar”) çalışır.</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-check.webp" width="230" height="487" alt="Kontrol: „Hâlâ uyanık mısın?”, altında „ya da telefonu salla”, bir ilerleme çizgisi, büyük bir Evet düğmesi ve altında Oturumu bitir (uygulamanın İngilizce sürümünden ekran görüntüsü)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Onayla</p><h3>Dokun, salla, ters çevir – sen seç</h3><p>Büyük <strong>Evet</strong> düğmesi her zaman çalışır. Ayarlardan telefonu sallamayı, ters çevirmeyi ya da bir ses tuşunu istediğin gibi ekleyebilirsin. Sallamak ve ters çevirmek ekran kapalıyken de çalışır.</p><p>Soruyu beklemen gerekmez: istediğin an onayla, aralık o andan itibaren yeniden başlar.</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-schedules.webp" width="230" height="487" alt="Planlar: 22:00’den 6:00’ya, pazartesiden cumaya, 30 dakikada bir, açık (uygulamanın İngilizce sürümünden ekran görüntüsü)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Vardiyalar</p><h3>Kendiliğinden başlayan planlar</h3><p>Tekrarlanan geceler için: başlangıç ve bitiş saati, istersen haftanın günleri, aralık. Oturum belirlenen saatte kendiliğinden başlar ve bitiş saatinde biter.</p><p>Hiç gün seçmezsen plan yalnızca bir kez, bir sonraki başlangıçta çalışır.</p></div></li><li class="feature"><figure class="phone"><img src="/stay-awake/img/en-reliability.webp" width="230" height="487" alt="Güvenilirlik kontrolü: „Hazır” ve bildirimlerden pile kadar dokuz yeşil madde (uygulamanın İngilizce sürümünden ekran görüntüsü)." decoding="async" loading="lazy"></figure>
+      <div class="feature__text"><p class="kicker">Güvenilirlik</p><h3>Telefonunun neye izin verdiğini bilir</h3><p>Android telefonlar alarmları geciktirebilir ya da engelleyebilir: pil tasarrufu, Rahatsız Etmeyin, eksik izinler. <strong>Güvenilirlik</strong> kontrolü her maddeyi sade bir dille gözden geçirir ve sorun olanı nasıl düzelteceğini gösterir.</p><p><strong>Alarmı test et</strong> ile alarmı ilk gerçek geceden önce 5 saniye boyunca duyar ve hissedersin.</p></div></li></ul>
+  </div></section>
+
+  <section class="band"><div class="wrap wide band__grid">
+    <div>
+      <h2>Kayıt yok</h2>
+      <ul class="ticks"><li><strong>Hesap yok, giriş yok.</strong> Oturumlar, planlar ve ayarlar telefonunda kalır.</li><li><strong>Çevrimdışı çalışır.</strong> Kontroller ve alarm internete ihtiyaç duymaz.</li><li><strong>Oturumlar telefon yeniden başlatılınca da sürer.</strong></li><li><strong>Ücretsiz, küçük bir banner ile.</strong> Kontrolde ve alarmda reklam yok. Stay Awake Pro banner’ı kaldırır – aylık abonelikle ya da tek seferlik satın almayla.</li><li><strong>20 dil</strong>, Arapçadan Vietnamcaya.</li></ul>
+      <p><a href="/stay-awake/privacy/">Gizlilik politikasını oku (İngilizce)</a></p>
+    </div>
+    <div class="limits">
+      <h2>Dürüst sınırlar</h2>
+      <p>Stay Awake uyanık kalmana yardım eder. Uykunun ya da molaların yerini tutmaz; iş ya da araç kullanma için bir güvenlik sistemi değildir. Bir kontrolün zamanında gelip gelmediği telefona da bağlıdır: güvenilirlik kontrolü seninkinin neye izin verdiğini gösterir.</p>
+    </div>
+  </div></section>
+
+  <section><div class="wrap wide">
+    <h2>Uzun geceler için rehberler (İngilizce)</h2>
+    <p class="lead">Uygulama olmadan da işe yarar: gece vardiyası, gece ders çalışma, kahvesiz uyanık kalmak, aralıklı alarm. Şimdilik yalnızca İngilizce.</p>
+    <ul class="tiles cols"><li><a href="/stay-awake/guides/how-to-stay-awake-on-night-shift/" hreflang="en"><b>Gece vardiyasında uyanık kalmak</b><em>Işık, hareket ve gece 3 civarındaki en zor saatler için bir plan.</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-while-studying/" hreflang="en"><b>Gece ders çalışırken uyanık kalmak</b><em>Kısa bloklar, aktif çalışma ve seni kontrol eden bir zamanlayıcı.</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-all-night/" hreflang="en"><b>Bütün gece uyanık kalmak</b><em>Akşam, gece yarısı, en zor saatler ve sabah için bir plan.</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-without-caffeine/" hreflang="en"><b>Kafein olmadan uyanık kalmak</b><em>Kahve yerine ışık, serinlik, hareket ve ritim.</em></a></li><li><a href="/stay-awake/guides/alarm-every-30-minutes-android/" hreflang="en"><b>Android’de her 30 dakikada bir alarm kurmak</b><em>Birkaç alarm, yeniden başlatılan bir zamanlayıcı ya da aralıklı alarm – üç yol.</em></a></li><li><a href="/stay-awake/guides/alarm-that-checks-if-you-are-awake/" hreflang="en"><b>Hâlâ uyanık mısın diye kontrol eden alarm</b><em>Önce sor, ancak gerekirse sesi yükselt – uyanıklık kontrolünün fikri.</em></a></li><li><a href="/stay-awake/guides/android-alarm-not-going-off/" hreflang="en"><b>Android alarmı çalmıyor mu? 7 neden ve çözüm</b><em>Ses, Rahatsız Etmeyin, pil tasarrufu, izinler – nelere bakmalı.</em></a></li><li><a href="/stay-awake/guides/interval-alarm-android/" hreflang="en"><b>Android’de aralıklı alarm: 10 ya da 15 dakikada bir, ya da her saat başı</b><em>Her saat başı Saat uygulamasıyla, daha kısa aralıklar zamanlayıcı ya da uygulamayla.</em></a></li><li><a href="/stay-awake/guides/how-to-stay-awake-after-alarm/" hreflang="en"><b>Alarm çaldıktan sonra uyanık kalmak</b><em>Alarm neden yetmez ve ilk on dakikayı nasıl atlatırsın.</em></a></li></ul>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Sık sorulan sorular</h2>
+    <div class="faq"><details><summary>Normal bir çalar saatten farkı ne?</summary><div class="answer"><p>Çalar saat, uyanık olsan da olmasan da belirli bir saatte çalar. Stay Awake önce sorar ve ancak cevap vermezsen yüksek sesle çalar. Sabah uyanmak için değil, uyanık kalmak için yapılmıştır.</p></div></details><details><summary>Ekranı açık tutmam gerekiyor mu?</summary><div class="answer"><p>Hayır. Telefonu bir kenara koy, kilitle, ekranın kapanmasına izin ver. Kontrol kilit ekranının üzerinde görünür. Sallamayı seçtiysen, ekran kapalıyken bile bir sallama onaylar.</p></div></details><details><summary>Alarm hangi sesi kullanıyor?</summary><div class="answer"><p>Varsayılan olarak telefonunun kendi alarm sesini. Ayarlardan Stay Awake melodisine geçebilir ya da başka bir ses seçebilirsin.</p></div></details><details><summary>İnternet olmadan çalışır mı?</summary><div class="answer"><p>Evet. Kontroller, titreşim ve alarm tamamen telefonda çalışır.</p></div></details><details><summary>Ücreti ne kadar?</summary><div class="answer"><p>Uyanık kalmanı sağlayan her şey ücretsiz. Ücretsiz sürüm normal ekranlarda küçük bir banner gösterir, kontrolde ve alarmda asla. Stay Awake Pro onu kaldırır – aylık abonelikle ya da tek seferlik satın almayla; fiyatı Google Play’de görürsün.</p></div></details><details><summary>iPhone sürümü var mı?</summary><div class="answer"><p>Hayır, Stay Awake yalnızca Android için var.</p></div></details></div>
+  </div></section>
+
+  <section class="final"><div class="wrap">
+    <h2>Uyanık kalman gerekiyorsa, bu uygulama senin için.</h2>
+    <p class="lead">Bir oturum başlat ve telefonu bir kenara koy. Sen oturumu bitirene kadar Stay Awake sormaya devam eder.</p>
+    <p class="cta"><a class="btn" href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=tr">Google Play’den alın</a><span class="cta__note">Android için ücretsiz · hesap gerekmez</span></p>
+  </div></section>
+</main>
+
+<footer class="site">
+  <div class="wrap wide foot">
+    <p><strong>Stay Awake</strong> · Hâlâ uyanık mısın diye soran alarm. Android için.</p>
+    <p><a href="/stay-awake/guides/">Rehberler (İngilizce)</a> · <a href="/stay-awake/privacy/">Gizlilik (İngilizce)</a> · <a href="/stay-awake/imprint/" rel="nofollow">Künye (İngilizce)</a> · <a href="https://play.google.com/store/apps/details?id=com.nicedevelopments.stayawake&amp;hl=tr">Google Play</a> · <a href="https://nicedevelopments.github.io/">Nice Developments’ın diğer uygulamaları</a></p>
+    <p class="fine">Nice Developments · Google Play ve Android, Google LLC’nin ticari markalarıdır.</p>
+  </div>
+</footer>
+</body>
+</html>

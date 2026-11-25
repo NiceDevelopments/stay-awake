@@ -1,0 +1,130 @@
+"""Türkçe (Welle 1, 24.11.2026). Bilgiler yalnızca uygulamadan (bkz. build.py docstring).
+
+Aramalar (Google önerileri, 24.11.2026): „uyumamak için ne yapmalı”, „gece uyanık kalmak için ne
+yapmalıyım”, „her saat başı alarm (nasıl kurulur)”, „nasıl uyumam”.
+
+Uygulamadaki adlar app/src/main/res/values-tr’deki gibi: Sınırsız, Zamanlayıcı, Oturumu başlat,
+Hâlâ uyanık mısın?, Evet, Oturumu bitir, Planlar, Güvenilirlik, Alarmı test et, Ayarlar.
+Ekran görüntüleri uygulamanın İngilizce sürümünden (Türkçesi henüz yok).
+Yasak: araç kullanma (yalnızca sınırlar cümlesi, Google Play kaydındaki gibi), iş güvenliği vaadi,
+„uyuyakalmayı önler”, tıbbi tavsiye. „Uyumamak için ilaç” gibi aramalara hitap edilmez.
+"""
+
+APP = "Stay Awake"
+NOTE_EN = " (uygulamanın İngilizce sürümünden ekran görüntüsü)"
+
+C = {
+    "app_name": APP,
+    "lang_name": "Türkçe",
+    "og_locale": "tr_TR",
+    "ui": {
+        "skip": "İçeriğe geç",
+        "nav": "Ana gezinme",
+        "guides": "Rehberler (İngilizce)",
+        "privacy": "Gizlilik (İngilizce)",
+        "imprint": "Künye (İngilizce)",
+        "faq": "Sık sorulan sorular",
+        "toc": "Bu sayfada",
+        "crumbs": "Gezinme yolu",
+        "updated": "Güncelleme:",
+        "with_app": "Uygulamayla",
+        "more_guides": "Diğer rehberler",
+        "play_cta": "Google Play’den alın",
+        "play_note": "Android için ücretsiz · hesap gerekmez",
+        "moreapps": "Nice Developments’ın diğer uygulamaları",
+        "footer_tag": "Hâlâ uyanık mısın diye soran alarm. Android için.",
+        "trademark": "Google Play ve Android, Google LLC’nin ticari markalarıdır.",
+    },
+
+    "home": {
+        "title": "Stay Awake: hâlâ uyanık mısın diye soran alarm (Android)",
+        "desc": "Gece uyanık kalmak mı gerekiyor? Alarm bir kez çalar; Stay Awake her 30 dakikada bir uyanık mısın diye sorar ve cevap verene kadar çalar.",
+        "kicker": "Uyanık kalması gerekenler için",
+        "h1": "Alarm bir kez çalar. Stay Awake sormaya devam eder.",
+        "lead": "Tanıdık geliyor mu: alarm çalar, kapatırsın ve beş dakika sonra yine uyumuşsundur. Stay Awake tek bir uyarıyla yetinmez. Her {interval_default} dakikada bir, ya da seçtiğin aralıkla, sorar: **Hâlâ uyanık mısın?** Telefonu salla ya da Evet’e dokun, bir sonraki tur başlasın. Cevap yok mu? {vibrate_s} saniye sonra titrer, {alarm_s} saniye sonra alarm çalar – sen cevap verene kadar.",
+        "who": "Gece vardiyası · nöbet · gece ders çalışma · gecenin ortasında beklemek",
+        "why_h2": "Normal bir alarm neden yetmez",
+        "why_lead": "Alarm seni bir kez uyandırmak için yapılmıştır. Uyanık kalmak ise saatlerce dayanmak demektir; en zor an, kimsenin hâlâ orada olup olmadığını kontrol etmediği andır.",
+        "why": [["Normal alarm", ["Önceden ayarladığın saatte bir kez çalar.", "Yarı uykulu kapatırsın, sonra başka bir şey olmaz.", "Hâlâ uyanık olup olmadığını hiç sormaz."]], ["Stay Awake", ["Bütün gece tekrar tekrar sorar, seçtiğin aralıkla: {interval_min} dakikadan {interval_max_h} saate kadar.", "Önce sessizce sorar. Ancak cevap vermezsen titrer, sonra çalar.", "Alarm sen cevap verene kadar çalar. Ardından bir sonraki tur başlar."]]],
+        "hero_shot": "en-session.webp",
+        "shots": {
+            "en-session.webp": "Süren oturum: 29:50 geri sayımının çevresinde kehribar renkli bir halka, altında „sonraki kontrole kadar”, „Sınırsız”, „Aralık: 30 dakika · Dokunma veya sallama”, „Uyanığım” düğmesi ve „Oturumu bitir”.",
+            "en-home.webp": "Ana ekran: Sınırsız ya da Zamanlayıcı, 30 dakikaya ayarlı yuvarlak bir kadran ve Oturumu başlat düğmesi" + NOTE_EN + ".",
+            "en-check.webp": "Kontrol: „Hâlâ uyanık mısın?”, altında „ya da telefonu salla”, bir ilerleme çizgisi, büyük bir Evet düğmesi ve altında Oturumu bitir" + NOTE_EN + ".",
+            "en-alarm.webp": "20 saniye cevap gelmeyince: aynı kontrol, bu kez „Kontrol kaçırıldı” ve kırmızı bir çizgiyle; alarm çalıyor" + NOTE_EN + ".",
+            "en-schedules.webp": "Planlar: 22:00’den 6:00’ya, pazartesiden cumaya, 30 dakikada bir, açık" + NOTE_EN + ".",
+            "en-reliability.webp": "Güvenilirlik kontrolü: „Hazır” ve bildirimlerden pile kadar dokuz yeşil madde" + NOTE_EN + ".",
+            "en-timer.webp": "Zamanlayıcı modu: 2 saat boyunca, 30 dakikada bir kontrol" + NOTE_EN + ".",
+            "en-settings.webp": "Ayarlar: Evet’e dokunmak her zaman çalışır; ayrıca telefonu sallamak, ters çevirmek ya da bir ses tuşu" + NOTE_EN + ".",
+        },
+        "steps_h2": "Kontrol zamanı gelince ne olur",
+        "steps_lead": "Önce yumuşak, ancak gerekirse yüksek sesle. Cevap verdiğin anda her adım durur.",
+        "steps": [
+            ["0 sn", "Soru", "Ekran açılır – kilit ekranının üzerinde de – ve sorar: Hâlâ uyanık mısın?"],
+            ["{vibrate_s} sn", "Titreşim", "Hâlâ cevap yok mu? Telefon titremeye başlar."],
+            ["{alarm_s} sn", "Alarm", "Yine cevap yoksa: telefonunun alarm sesiyle gerçek bir alarm."],
+            ["Evet", "Sonraki tur", "Bir dokunuş ya da bir sallama: her şey durur ve aralık baştan başlar."],
+        ],
+        "features_h2": "Başlat, onayla, planla, kontrol et",
+        "features": [
+            {"kicker": "Başlat", "h2": "İki karar, bir düğme",
+             "body": ["**Sınırsız** ya da **Zamanlayıcı**, bir de ne sıklıkla sorulacağı. Kadranı çevir: {interval_min} dakikadan {interval_max_h} saate kadar, başlangıçta {interval_default} dakika. Uygulama son seçimini hatırlar.",
+                      "Zamanlayıcı belirli bir süre („2 saat boyunca”) ya da belirli bir saate kadar („5:30’a kadar”) çalışır."],
+             "shot": "en-home.webp"},
+            {"kicker": "Onayla", "h2": "Dokun, salla, ters çevir – sen seç",
+             "body": ["Büyük **Evet** düğmesi her zaman çalışır. Ayarlardan telefonu sallamayı, ters çevirmeyi ya da bir ses tuşunu istediğin gibi ekleyebilirsin. Sallamak ve ters çevirmek ekran kapalıyken de çalışır.",
+                      "Soruyu beklemen gerekmez: istediğin an onayla, aralık o andan itibaren yeniden başlar."],
+             "shot": "en-check.webp"},
+            {"kicker": "Vardiyalar", "h2": "Kendiliğinden başlayan planlar",
+             "body": ["Tekrarlanan geceler için: başlangıç ve bitiş saati, istersen haftanın günleri, aralık. Oturum belirlenen saatte kendiliğinden başlar ve bitiş saatinde biter.",
+                      "Hiç gün seçmezsen plan yalnızca bir kez, bir sonraki başlangıçta çalışır."],
+             "shot": "en-schedules.webp"},
+            {"kicker": "Güvenilirlik", "h2": "Telefonunun neye izin verdiğini bilir",
+             "body": ["Android telefonlar alarmları geciktirebilir ya da engelleyebilir: pil tasarrufu, Rahatsız Etmeyin, eksik izinler. **Güvenilirlik** kontrolü her maddeyi sade bir dille gözden geçirir ve sorun olanı nasıl düzelteceğini gösterir.",
+                      "**Alarmı test et** ile alarmı ilk gerçek geceden önce {test_alarm_s} saniye boyunca duyar ve hissedersin."],
+             "shot": "en-reliability.webp"},
+        ],
+        "limits_h2": "Dürüst sınırlar",
+        "limits": "Stay Awake uyanık kalmana yardım eder. Uykunun ya da molaların yerini tutmaz; iş ya da araç kullanma için bir güvenlik sistemi değildir. Bir kontrolün zamanında gelip gelmediği telefona da bağlıdır: güvenilirlik kontrolü seninkinin neye izin verdiğini gösterir.",
+        "nots_h2": "Kayıt yok",
+        "nots": [
+            "**Hesap yok, giriş yok.** Oturumlar, planlar ve ayarlar telefonunda kalır.",
+            "**Çevrimdışı çalışır.** Kontroller ve alarm internete ihtiyaç duymaz.",
+            "**Oturumlar telefon yeniden başlatılınca da sürer.**",
+            "**Ücretsiz, küçük bir banner ile.** Kontrolde ve alarmda reklam yok. Stay Awake Pro banner’ı kaldırır – aylık abonelikle ya da tek seferlik satın almayla.",
+            "**{languages} dil**, Arapçadan Vietnamcaya.",
+        ],
+        "privacy_link": "Gizlilik politikasını oku (İngilizce)",
+        "guides_h2": "Uzun geceler için rehberler (İngilizce)",
+        "guides_lead": "Uygulama olmadan da işe yarar: gece vardiyası, gece ders çalışma, kahvesiz uyanık kalmak, aralıklı alarm. Şimdilik yalnızca İngilizce.",
+        "guide_cards": [
+            ("Gece vardiyasında uyanık kalmak", "Işık, hareket ve gece 3 civarındaki en zor saatler için bir plan."),
+            ("Gece ders çalışırken uyanık kalmak", "Kısa bloklar, aktif çalışma ve seni kontrol eden bir zamanlayıcı."),
+            ("Bütün gece uyanık kalmak", "Akşam, gece yarısı, en zor saatler ve sabah için bir plan."),
+            ("Kafein olmadan uyanık kalmak", "Kahve yerine ışık, serinlik, hareket ve ritim."),
+            ("Android’de her 30 dakikada bir alarm kurmak", "Birkaç alarm, yeniden başlatılan bir zamanlayıcı ya da aralıklı alarm – üç yol."),
+            ("Hâlâ uyanık mısın diye kontrol eden alarm", "Önce sor, ancak gerekirse sesi yükselt – uyanıklık kontrolünün fikri."),
+            ("Android alarmı çalmıyor mu? 7 neden ve çözüm", "Ses, Rahatsız Etmeyin, pil tasarrufu, izinler – nelere bakmalı."),
+            ("Android’de aralıklı alarm: 10 ya da 15 dakikada bir, ya da her saat başı", "Her saat başı Saat uygulamasıyla, daha kısa aralıklar zamanlayıcı ya da uygulamayla."),
+            ("Alarm çaldıktan sonra uyanık kalmak", "Alarm neden yetmez ve ilk on dakikayı nasıl atlatırsın."),
+        ],
+        "faq": [
+            ["Normal bir çalar saatten farkı ne?",
+             ["Çalar saat, uyanık olsan da olmasan da belirli bir saatte çalar. Stay Awake önce sorar ve ancak cevap vermezsen yüksek sesle çalar. Sabah uyanmak için değil, uyanık kalmak için yapılmıştır."]],
+            ["Ekranı açık tutmam gerekiyor mu?",
+             ["Hayır. Telefonu bir kenara koy, kilitle, ekranın kapanmasına izin ver. Kontrol kilit ekranının üzerinde görünür. Sallamayı seçtiysen, ekran kapalıyken bile bir sallama onaylar."]],
+            ["Alarm hangi sesi kullanıyor?",
+             ["Varsayılan olarak telefonunun kendi alarm sesini. Ayarlardan Stay Awake melodisine geçebilir ya da başka bir ses seçebilirsin."]],
+            ["İnternet olmadan çalışır mı?",
+             ["Evet. Kontroller, titreşim ve alarm tamamen telefonda çalışır."]],
+            ["Ücreti ne kadar?",
+             ["Uyanık kalmanı sağlayan her şey ücretsiz. Ücretsiz sürüm normal ekranlarda küçük bir banner gösterir, kontrolde ve alarmda asla. Stay Awake Pro onu kaldırır – aylık abonelikle ya da tek seferlik satın almayla; fiyatı Google Play’de görürsün."]],
+            ["iPhone sürümü var mı?",
+             ["Hayır, Stay Awake yalnızca Android için var."]],
+        ],
+        "final_h2": "Uyanık kalman gerekiyorsa, bu uygulama senin için.",
+        "final_body": "Bir oturum başlat ve telefonu bir kenara koy. Sen oturumu bitirene kadar Stay Awake sormaya devam eder.",
+    },
+
+    "guides": [],
+}
