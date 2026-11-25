@@ -76,7 +76,7 @@ C = {
                       "The timer runs for a set time (“for 2 hours”) or until a clock time (“until 5:30”)."],
              "shot": "en-home.webp"},
             {"kicker": "Confirm", "h2": "Tap, shake, flip – your choice",
-             "body": ["The big **Yes** always works. In Settings you can add shaking the phone, flipping it face down and back, or a volume button – in any combination. Shake and flip also work with the screen off.",
+             "body": ["The big **Yes** always works. In Settings you can add shaking the phone, flipping it over once (either way), or a volume button – in any combination. Shake and flip also work with the screen off.",
                       "You don’t have to wait for the question: confirm whenever you like, and the interval starts over from that moment. The session notification has an **I am awake** button too."],
              "shot": "en-check.webp"},
             {"kicker": "Shifts", "h2": "Schedules that start on their own",
